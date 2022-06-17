@@ -9666,19 +9666,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\giank\\.nuget\\packages\\": {}
+    "C:\\Users\\Jose\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\giank\\Source\\Repos\\PrograAvanzadaWebllCuatri\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj",
+      "projectUniqueName": "C:\\GIT\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj",
       "projectName": "FrontEnd",
-      "projectPath": "C:\\Users\\giank\\Source\\Repos\\PrograAvanzadaWebllCuatri\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj",
-      "packagesPath": "C:\\Users\\giank\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\giank\\Source\\Repos\\PrograAvanzadaWebllCuatri\\REDBOX DISTRIBUIDORA\\FrontEnd\\obj\\",
+      "projectPath": "C:\\GIT\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj",
+      "packagesPath": "C:\\Users\\Jose\\.nuget\\packages\\",
+      "outputPath": "C:\\GIT\\REDBOX DISTRIBUIDORA\\FrontEnd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\giank\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jose\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9692,8 +9692,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\giank\\Source\\Repos\\PrograAvanzadaWebllCuatri\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {
-              "projectPath": "C:\\Users\\giank\\Source\\Repos\\PrograAvanzadaWebllCuatri\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj"
+            "C:\\GIT\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {
+              "projectPath": "C:\\GIT\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj"
             }
           }
         }
@@ -9735,7 +9735,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
