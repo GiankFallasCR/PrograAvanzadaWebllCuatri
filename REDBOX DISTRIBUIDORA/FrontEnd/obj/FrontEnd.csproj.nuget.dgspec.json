@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GIT\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj": {}
+    "/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/FrontEnd.csproj": {}
   },
   "projects": {
-    "C:\\GIT\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {
+    "/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/BackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GIT\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
+        "projectUniqueName": "/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/BackEnd.csproj",
         "projectName": "BackEnd",
-        "projectPath": "C:\\GIT\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
-        "packagesPath": "C:\\Users\\Jose\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\REDBOX DISTRIBUIDORA\\BackEnd\\obj\\",
+        "projectPath": "/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/BackEnd.csproj",
+        "packagesPath": "/Users/robcordoba/.nuget/packages/",
+        "outputPath": "/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jose\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/robcordoba/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,11 +40,11 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.5, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.5, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer.Design": {
               "target": "Package",
@@ -56,7 +54,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.5, )"
+              "version": "[6.0.6, )"
             }
           },
           "imports": [
@@ -74,36 +72,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\GIT\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj": {
+    "/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/FrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GIT\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj",
+        "projectUniqueName": "/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/FrontEnd.csproj",
         "projectName": "FrontEnd",
-        "projectPath": "C:\\GIT\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj",
-        "packagesPath": "C:\\Users\\Jose\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\REDBOX DISTRIBUIDORA\\FrontEnd\\obj\\",
+        "projectPath": "/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/FrontEnd.csproj",
+        "packagesPath": "/Users/robcordoba/.nuget/packages/",
+        "outputPath": "/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jose\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/robcordoba/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\GIT\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {
-                "projectPath": "C:\\GIT\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj"
+              "/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/BackEnd.csproj": {
+                "projectPath": "/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/BackEnd.csproj"
               }
             }
           }
@@ -124,7 +120,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.3.0, )"
+              "version": "[6.3.1, )"
             }
           },
           "imports": [
@@ -145,7 +141,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
         }
       }
     }
