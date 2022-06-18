@@ -33,7 +33,8 @@ namespace BackEnd.Entities
                 // String de Jose R:  optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;"); conex JoseR
                 //String de Rob: optionsBuilder.UseSqlServer("data source=localhost,1433;Database=BD_REDBOX_DISTRIBUIDORA;User Id=sa;Password=yourStrong(!)Password;");
                 /*String de Drix:*/ /*optionsBuilder.UseSqlServer("Server=DESKTOP-LFFMPOQ\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");*/
-                // String de JuanK optionsBuilder.UseSqlServer("Server=.;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");
+                // String de JuanK 
+                optionsBuilder.UseSqlServer("Server=.;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");
 
 
 
