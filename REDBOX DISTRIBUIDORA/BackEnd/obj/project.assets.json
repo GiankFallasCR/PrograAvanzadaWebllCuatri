@@ -6261,19 +6261,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pilo\\.nuget\\packages\\": {}
+    "C:\\Users\\juank\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pilo\\Desktop\\DISTREDBOX\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
+      "projectUniqueName": "C:\\Users\\juank\\Desktop\\Redbox\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
       "projectName": "BackEnd",
-      "projectPath": "C:\\Users\\Pilo\\Desktop\\DISTREDBOX\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
-      "packagesPath": "C:\\Users\\Pilo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pilo\\Desktop\\DISTREDBOX\\REDBOX DISTRIBUIDORA\\BackEnd\\obj\\",
+      "projectPath": "C:\\Users\\juank\\Desktop\\Redbox\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
+      "packagesPath": "C:\\Users\\juank\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\juank\\Desktop\\Redbox\\REDBOX DISTRIBUIDORA\\BackEnd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Pilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\juank\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6333,7 +6333,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
