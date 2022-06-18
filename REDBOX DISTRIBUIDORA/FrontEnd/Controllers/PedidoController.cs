@@ -16,7 +16,10 @@ namespace FrontEnd.Controllers
             {
                 NumeroPedido = pedido.NumeroPedido,
                 FechaPedido = pedido.FechaPedido,
-                IdEstado = pedido.IdPedido
+                IdEstado = pedido.IdPedido,
+                IdProducto = pedido.IdProducto,
+                IdPedido = pedido.IdPedido,
+                IdUsuario = pedido.IdUsuario
             };
         }
 
@@ -24,19 +27,19 @@ namespace FrontEnd.Controllers
         #region Lista
         public IActionResult Index()
         {
+            List<Pedido> pedidos;
             pedidoDAL = new DALPedidoIMP();
 
-            List<Pedido> lista;
-            lista = pedidoDAL.GetAll().ToList();
-            List<PedidoViewModel> pedidos = new List<PedidoViewModel>();
 
-            foreach (Pedido item in lista)
+            pedidos = pedidoDAL.GetAll().ToList();
+            List<PedidoViewModel> lista = new List<PedidoViewModel>();
+
+            foreach (Pedido pedido in pedidos)
             {
-
-                pedidos.Add(Convertir(item));
+                lista.Add(Convertir(pedido));
             }
 
-            return View(pedidos);
+            return View(lista);
         }
 
         #endregion
