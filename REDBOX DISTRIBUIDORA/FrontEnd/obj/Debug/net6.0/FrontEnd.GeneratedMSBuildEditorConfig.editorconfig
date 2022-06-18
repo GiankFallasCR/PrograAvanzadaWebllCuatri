@@ -8,57 +8,57 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FrontEnd
 build_property.RootNamespace = FrontEnd
-build_property.ProjectDir = /Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/
+build_property.ProjectDir = C:\Users\Pilo\Desktop\DISTREDBOX\REDBOX DISTRIBUIDORA\FrontEnd\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd
+build_property.MSBuildProjectDirectory = C:\Users\Pilo\Desktop\DISTREDBOX\REDBOX DISTRIBUIDORA\FrontEnd
 build_property._RazorSourceGeneratorDebug = 
 
-[/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGVkaWRvL0NyZWF0ZS5jc2h0bWw=
+[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGVkaWRvL0RlbGV0ZS5jc2h0bWw=
+[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGVkaWRvL0RldGFpbHMuY3NodG1s
+[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGVkaWRvL0VkaXQuY3NodG1s
+[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGVkaWRvL0luZGV4LmNzaHRtbA==
+[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Volumes/SSD 1TB/PrograAvanzadaWeb/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-wqxr0lmsly
+[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-709v5g0hbe
