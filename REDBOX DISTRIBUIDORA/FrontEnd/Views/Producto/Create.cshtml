@@ -1,0 +1,74 @@
+﻿@model FrontEnd.Models.ProductoViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>ProductoViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group">
+                <label asp-for="NombreProducto" class="control-label"></label>
+                <input asp-for="NombreProducto" class="form-control" />
+                <span asp-validation-for="NombreProducto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrecioProducto" class="control-label"></label>
+                <input asp-for="PrecioProducto" class="form-control" />
+                <span asp-validation-for="PrecioProducto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CantidadDisponible" class="control-label"></label>
+                <input asp-for="CantidadDisponible" class="form-control" />
+                <span asp-validation-for="CantidadDisponible" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TallaProducto" class="control-label"></label>
+                <input asp-for="TallaProducto" class="form-control" />
+                <span asp-validation-for="TallaProducto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaActualizacion" class="control-label"></label>
+                <input asp-for="FechaActualizacion" class="form-control" />
+                <span asp-validation-for="FechaActualizacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaRegistro" class="control-label"></label>
+                <input asp-for="FechaRegistro" class="form-control" />
+                <span asp-validation-for="FechaRegistro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdCategoria" class="control-label"></label>
+                @Html.DropDownListFor(model => model.IdCategoria, new SelectList(Model.Categorias,"IdCategoria","NombreCategoria"),"--Seleccione--")
+                <span asp-validation-for="IdCategoria" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdProveedor" class="control-label"></label>
+                @Html.DropDownListFor(model => model.IdProveedor, new SelectList(Model.Proveedores,"IdProveedor","NombreProveedor"),"--Seleccione--")
+                <span asp-validation-for="IdProveedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RutaImagen" class="control-label"></label>
+                <input asp-for="RutaImagen" class="form-control" />
+                <span asp-validation-for="RutaImagen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
