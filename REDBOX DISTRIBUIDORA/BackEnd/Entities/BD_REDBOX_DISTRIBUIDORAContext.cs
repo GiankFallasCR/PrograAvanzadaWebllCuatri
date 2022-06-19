@@ -32,9 +32,10 @@ namespace BackEnd.Entities
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 // String de Jose R:  optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;"); conex JoseR
                 //String de Rob: optionsBuilder.UseSqlServer("data source=localhost,1433;Database=BD_REDBOX_DISTRIBUIDORA;User Id=sa;Password=yourStrong(!)Password;");
-                /*String de Drix:*/ /*optionsBuilder.UseSqlServer("Server=DESKTOP-LFFMPOQ\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");*/
+                /*String de Drix:*/
+                optionsBuilder.UseSqlServer("Server=DESKTOP-LFFMPOQ\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");
                 // String de JuanK 
-                optionsBuilder.UseSqlServer("Server=.;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");
+                //optionsBuilder.UseSqlServer("Server=.;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");
 
 
 

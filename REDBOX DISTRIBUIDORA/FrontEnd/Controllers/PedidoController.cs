@@ -2,6 +2,8 @@
 using BackEnd.DAL;
 using BackEnd.Entities;
 using FrontEnd.Models;
+using BackEnd.DAL.Interfaces;
+using BackEnd.DAL.Implementations;
 
 namespace FrontEnd.Controllers
 {
@@ -9,16 +11,19 @@ namespace FrontEnd.Controllers
     {
 
         IDALPedido pedidoDAL;
+        IEstadoDAL estadoDAL;
+        IProductoDAL productoDAL;
+        //IUsuarioDAL usuarioDAL;
 
         private PedidoViewModel Convertir(Pedido pedido)
         {
             return new PedidoViewModel
             {
+                IdPedido = pedido.IdPedido,
                 NumeroPedido = pedido.NumeroPedido,
                 FechaPedido = pedido.FechaPedido,
                 IdEstado = pedido.IdPedido,
-                IdProducto = pedido.IdProducto,
-                IdPedido = pedido.IdPedido,
+                IdProducto = pedido.IdProducto,   
                 IdUsuario = pedido.IdUsuario
             };
         }
@@ -47,8 +52,17 @@ namespace FrontEnd.Controllers
         #region Agregar
         public IActionResult Create()
         {
+            PedidoViewModel pedidos = new PedidoViewModel();
+            estadoDAL = new EstadoDALImpl();
+            productoDAL = new ProductoDALImpl();
+            //usuarioDAL = new UsuarioDALImpl();
 
-            return View();
+            pedidos.Estados = estadoDAL.GetAll();
+            pedidos.Productos = productoDAL.GetAll();
+            //pedidos.Usuarios = usuarioDAL.GetAll();
+
+            return View(pedidos);
+
         }
 
         [HttpPost]
@@ -68,20 +82,25 @@ namespace FrontEnd.Controllers
         {
 
             pedidoDAL = new DALPedidoIMP();
-            Pedido item = pedidoDAL.Get(id);
+            PedidoViewModel pedidos = Convertir(pedidoDAL.Get(id));
 
+            estadoDAL = new EstadoDALImpl();
+            productoDAL = new ProductoDALImpl();
+            //usuarioDAL = new UsuarioDALImpl();
 
+            pedidos.Estados = estadoDAL.GetAll();
+            pedidos.Productos = productoDAL.GetAll();
+            //pedidos.Usuarios = usuarioDAL.GetAll();
 
-
-            return View(Convertir(item));
+            return View(pedidos);
         }
 
         [HttpPost]
-        public IActionResult Edit(Pedido category)
+        public IActionResult Edit(Pedido pedido)
         {
 
             pedidoDAL = new DALPedidoIMP();
-            pedidoDAL.Update(category);
+            pedidoDAL.Update(pedido);
             return RedirectToAction("Index");
         }
 
@@ -94,11 +113,19 @@ namespace FrontEnd.Controllers
         {
 
             pedidoDAL = new DALPedidoIMP();
-            Pedido item = pedidoDAL.Get(id);
+            PedidoViewModel pedidos = Convertir(pedidoDAL.Get(id));
+
+            estadoDAL = new EstadoDALImpl();
+            productoDAL = new ProductoDALImpl();
+            //usuarioDAL = new UsuarioDALImpl();
+
+            pedidos.Estado = estadoDAL.Get(pedidos.IdEstado);
+            pedidos.Producto = productoDAL.Get(pedidos.IdProducto);
 
 
+           
 
-            return View(Convertir(item));
+            return View(pedidos);
         }
 
 
@@ -110,12 +137,12 @@ namespace FrontEnd.Controllers
         {
 
             pedidoDAL = new DALPedidoIMP();
-            Pedido item = pedidoDAL.Get(id);
+            PedidoViewModel pedido = Convertir(pedidoDAL.Get(id));
 
 
 
 
-            return View(Convertir(item));
+            return View(pedido);
         }
 
         [HttpPost]

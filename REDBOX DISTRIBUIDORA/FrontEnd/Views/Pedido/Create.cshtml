@@ -6,7 +6,7 @@
 
 <h1>Create</h1>
 
-<h4>PedidoViewModel</h4>
+<h4>Pedido</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -18,26 +18,31 @@
                 <input asp-for="NumeroPedido" class="form-control" />
                 <span asp-validation-for="NumeroPedido" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
                 <label asp-for="FechaPedido" class="control-label"></label>
                 <input asp-for="FechaPedido" class="form-control" />
                 <span asp-validation-for="FechaPedido" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
                 <label asp-for="IdProducto" class="control-label"></label>
-                <input asp-for="IdProducto" class="form-control" />
+                 @Html.DropDownListFor(model => model.IdProducto, new SelectList(Model.Productos,"IdProducto","NombreProducto"),"--Seleccione--")
                 <span asp-validation-for="IdProducto" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
                 <label asp-for="IdEstado" class="control-label"></label>
-                <input asp-for="IdEstado" class="form-control" />
+                 @Html.DropDownListFor(model => model.IdEstado, new SelectList(Model.Estados,"IdEstado","DescripcionEstado"),"--Seleccione--")
                 <span asp-validation-for="IdEstado" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
                 <label asp-for="IdUsuario" class="control-label"></label>
                 <input asp-for="IdUsuario" class="form-control" />
                 <span asp-validation-for="IdUsuario" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>

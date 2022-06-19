@@ -48,16 +48,16 @@ namespace BackEnd.DAL
             throw new NotImplementedException();
         }
 
-        public Pedido Get(int IdPedido)
+        public Pedido Get(int id)
         {
             try
             {
-                Pedido Pedido;
+                Pedido pedido;
                 using (UnidadDeTrabajo<Pedido> unidad = new UnidadDeTrabajo<Pedido>(context))
                 {
-                    Pedido = unidad.genericDAL.Get(IdPedido);
+                    pedido = unidad.genericDAL.Get(id);
                 }
-                return Pedido;
+                return pedido;
             }
             catch (Exception)
             {

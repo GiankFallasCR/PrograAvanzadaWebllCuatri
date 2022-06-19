@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using BackEnd.Entities;
+using System.ComponentModel.DataAnnotations;
 
 namespace FrontEnd.Models
 {
@@ -14,18 +15,24 @@ namespace FrontEnd.Models
         [Display(Name = "Fecha de Pedido")]
         public DateTime FechaPedido { get; set; }
 
+
         [Display(Name = "ID de Producto")]
         public int IdProducto { get; set; }
+        public IEnumerable<Producto> Productos { get; set; }
+        public Producto Producto { get; set; }
+
 
         [Display(Name = "Estado de Pedido")]
         public int IdEstado { get; set; }
+        public IEnumerable<Estado> Estados { get; set; }
+        public Estado Estado { get; set; }
+
+
 
         [Display(Name = "ID de Usuario")]
 
         public int IdUsuario { get; set; }
-
-        //public virtual Estado IdEstadoNavigation { get; set; } = null!;
-        //public virtual Producto IdProductoNavigation { get; set; } = null!;
-        //public virtual Usuario IdUsuarioNavigation { get; set; } = null!;
+        public IEnumerable<Usuario> Usuarios { get; set; }
+        public Usuario Usuario { get; set; }
     }
 }
