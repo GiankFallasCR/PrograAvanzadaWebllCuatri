@@ -66,23 +66,23 @@ namespace BackEnd.DAL
             }
         }
 
-        public List<Pedido> Get()
-        {
-            try
-            {
-                IEnumerable<Pedido> pedidos;
-                using (UnidadDeTrabajo<Pedido> unidad = new UnidadDeTrabajo<Pedido>(context))
-                {
-                    pedidos = unidad.genericDAL.GetAll();
-                }
-                return pedidos.ToList();
-            }
-            catch (Exception)
-            {
+        //public List<Pedido> Get()
+        //{
+        //    try
+        //    {
+        //        IEnumerable<Pedido> pedidos;
+        //        using (UnidadDeTrabajo<Pedido> unidad = new UnidadDeTrabajo<Pedido>(context))
+        //        {
+        //            pedidos = unidad.genericDAL.GetAll();
+        //        }
+        //        return pedidos.ToList();
+        //    }
+        //    catch (Exception)
+        //    {
 
-                throw;
-            }
-        }
+        //        throw;
+        //    }
+        //}
 
         public IEnumerable<Pedido> GetAll()
         {
