@@ -23,8 +23,8 @@ namespace FrontEnd.Controllers
                 NumeroPedido = pedido.NumeroPedido,
                 FechaPedido = pedido.FechaPedido,
                 IdEstado = pedido.IdPedido,
-                IdProducto = pedido.IdProducto,   
-                IdUsuario = pedido.IdUsuario
+                IdProducto = (int)pedido.IdProducto,   
+                IdUsuario = (int)pedido.IdUsuario
             };
         }
 

@@ -8,109 +8,129 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FrontEnd
 build_property.RootNamespace = FrontEnd
-build_property.ProjectDir = C:\Users\Pilo\Desktop\DISTREDBOX\REDBOX DISTRIBUIDORA\FrontEnd\
+build_property.ProjectDir = C:\Proyecto RedBox\REDBOX DISTRIBUIDORA\FrontEnd\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Pilo\Desktop\DISTREDBOX\REDBOX DISTRIBUIDORA\FrontEnd
+build_property.MSBuildProjectDirectory = C:\Proyecto RedBox\REDBOX DISTRIBUIDORA\FrontEnd
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Categoria/Create.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Categoria/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Categoria/Delete.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Categoria/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Categoria/Edit.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Categoria/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Categoria/Index.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Categoria/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Home/Index.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Home/Privacy.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Create.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Delete.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Details.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Edit.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Index.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Pedido/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Producto/Create.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Producto/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Producto/Delete.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Producto/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Producto/Details.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Producto/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Producto/Edit.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Producto/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Producto/Index.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Producto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Proveedor/Create.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Proveedor/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Proveedor/Delete.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Proveedor/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Proveedor/Edit.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Proveedor/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Proveedor/Index.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Proveedor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Shared/Error.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/_ViewImports.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Usuario/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Usuario/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Usuario/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Usuario/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Usuario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/_ViewStart.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pilo/Desktop/DISTREDBOX/REDBOX DISTRIBUIDORA/FrontEnd/Views/Shared/_Layout.cshtml]
+[C:/Proyecto RedBox/REDBOX DISTRIBUIDORA/FrontEnd/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-709v5g0hbe

@@ -1,6 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace BackEnd.Entities
@@ -30,15 +30,7 @@ namespace BackEnd.Entities
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                // String de Jose R:  optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;"); conex JoseR
-                //String de Rob: optionsBuilder.UseSqlServer("data source=localhost,1433;Database=BD_REDBOX_DISTRIBUIDORA;User Id=sa;Password=yourStrong(!)Password;");
-                /*String de Drix:*/
-                optionsBuilder.UseSqlServer("Server=DESKTOP-LFFMPOQ\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");
-                // String de JuanK 
-                //optionsBuilder.UseSqlServer("Server=.;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");
-
-
-
+                optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");
             }
         }
 
@@ -132,19 +124,16 @@ namespace BackEnd.Entities
                 entity.HasOne(d => d.IdEstadoNavigation)
                     .WithMany(p => p.Pedidos)
                     .HasForeignKey(d => d.IdEstado)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("R_3");
 
                 entity.HasOne(d => d.IdProductoNavigation)
                     .WithMany(p => p.Pedidos)
                     .HasForeignKey(d => d.IdProducto)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("R_2");
 
                 entity.HasOne(d => d.IdUsuarioNavigation)
                     .WithMany(p => p.Pedidos)
                     .HasForeignKey(d => d.IdUsuario)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("R_5");
             });
 
@@ -263,6 +252,11 @@ namespace BackEnd.Entities
                     .IsUnicode(false)
                     .HasColumnName("CEDULA");
 
+                entity.Property(e => e.ContraseniaUsuario)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("CONTRASENIA_USUARIO");
+
                 entity.Property(e => e.Direccion)
                     .IsUnicode(false)
                     .HasColumnName("DIRECCION");
@@ -273,6 +267,11 @@ namespace BackEnd.Entities
                     .HasMaxLength(50)
                     .IsUnicode(false)
                     .HasColumnName("NOMBRE");
+
+                entity.Property(e => e.NombreUsuario)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("NOMBRE_USUARIO");
 
                 entity.Property(e => e.Telefono)
                     .HasMaxLength(80)
