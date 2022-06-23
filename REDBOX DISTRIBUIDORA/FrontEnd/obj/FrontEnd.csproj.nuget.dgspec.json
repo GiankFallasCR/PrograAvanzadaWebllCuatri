@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proyecto RedBox\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj": {}
+    "/Users/jose/Desktop/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/FrontEnd.csproj": {}
   },
   "projects": {
-    "C:\\Proyecto RedBox\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {
+    "/Users/jose/Desktop/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/BackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto RedBox\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
+        "projectUniqueName": "/Users/jose/Desktop/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/BackEnd.csproj",
         "projectName": "BackEnd",
-        "projectPath": "C:\\Proyecto RedBox\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto RedBox\\REDBOX DISTRIBUIDORA\\BackEnd\\obj\\",
+        "projectPath": "/Users/jose/Desktop/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/BackEnd.csproj",
+        "packagesPath": "/Users/jose/.nuget/packages/",
+        "outputPath": "/Users/jose/Desktop/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/jose/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -78,40 +72,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Proyecto RedBox\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj": {
+    "/Users/jose/Desktop/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/FrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto RedBox\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj",
+        "projectUniqueName": "/Users/jose/Desktop/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/FrontEnd.csproj",
         "projectName": "FrontEnd",
-        "projectPath": "C:\\Proyecto RedBox\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto RedBox\\REDBOX DISTRIBUIDORA\\FrontEnd\\obj\\",
+        "projectPath": "/Users/jose/Desktop/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/FrontEnd.csproj",
+        "packagesPath": "/Users/jose/.nuget/packages/",
+        "outputPath": "/Users/jose/Desktop/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/FrontEnd/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/jose/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Proyecto RedBox\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {
-                "projectPath": "C:\\Proyecto RedBox\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj"
+              "/Users/jose/Desktop/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/BackEnd.csproj": {
+                "projectPath": "/Users/jose/Desktop/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/BackEnd.csproj"
               }
             }
           }
@@ -153,7 +141,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
         }
       }
     }
