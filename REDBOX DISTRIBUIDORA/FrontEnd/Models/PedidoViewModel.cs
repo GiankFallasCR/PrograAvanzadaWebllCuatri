@@ -16,7 +16,7 @@ namespace FrontEnd.Models
         public DateTime FechaPedido { get; set; }
 
 
-        [Display(Name = "ID de Producto")]
+        [Display(Name = "Producto")]
         public int IdProducto { get; set; }
         public IEnumerable<Producto> Productos { get; set; }
         public Producto Producto { get; set; }
@@ -29,7 +29,7 @@ namespace FrontEnd.Models
 
 
 
-        [Display(Name = "ID de Usuario")]
+        [Display(Name = "Usuario")]
 
         public int IdUsuario { get; set; }
         public IEnumerable<Usuario> Usuarios { get; set; }

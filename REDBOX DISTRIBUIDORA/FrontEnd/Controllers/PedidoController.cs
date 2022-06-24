@@ -13,7 +13,7 @@ namespace FrontEnd.Controllers
         IDALPedido pedidoDAL;
         IEstadoDAL estadoDAL;
         IProductoDAL productoDAL;
-        //IUsuarioDAL usuarioDAL;
+        IUsuarioDAL usuarioDAL;
 
         private PedidoViewModel Convertir(Pedido pedido)
         {
@@ -22,7 +22,7 @@ namespace FrontEnd.Controllers
                 IdPedido = pedido.IdPedido,
                 NumeroPedido = pedido.NumeroPedido,
                 FechaPedido = pedido.FechaPedido,
-                IdEstado = pedido.IdPedido,
+                IdEstado = (int)pedido.IdEstado,
                 IdProducto = (int)pedido.IdProducto,   
                 IdUsuario = (int)pedido.IdUsuario
             };
@@ -55,11 +55,11 @@ namespace FrontEnd.Controllers
             PedidoViewModel pedidos = new PedidoViewModel();
             estadoDAL = new EstadoDALImpl();
             productoDAL = new ProductoDALImpl();
-            //usuarioDAL = new UsuarioDALImpl();
+            usuarioDAL = new UsuarioDALImpl();
 
             pedidos.Estados = estadoDAL.GetAll();
             pedidos.Productos = productoDAL.GetAll();
-            //pedidos.Usuarios = usuarioDAL.GetAll();
+            pedidos.Usuarios = usuarioDAL.GetAll();
 
             return View(pedidos);
 
@@ -86,11 +86,11 @@ namespace FrontEnd.Controllers
 
             estadoDAL = new EstadoDALImpl();
             productoDAL = new ProductoDALImpl();
-            //usuarioDAL = new UsuarioDALImpl();
+            usuarioDAL = new UsuarioDALImpl();
 
             pedidos.Estados = estadoDAL.GetAll();
             pedidos.Productos = productoDAL.GetAll();
-            //pedidos.Usuarios = usuarioDAL.GetAll();
+            pedidos.Usuarios = usuarioDAL.GetAll();
 
             return View(pedidos);
         }
@@ -117,11 +117,11 @@ namespace FrontEnd.Controllers
 
             estadoDAL = new EstadoDALImpl();
             productoDAL = new ProductoDALImpl();
-            //usuarioDAL = new UsuarioDALImpl();
+            usuarioDAL = new UsuarioDALImpl();
 
             pedidos.Estado = estadoDAL.Get(pedidos.IdEstado);
             pedidos.Producto = productoDAL.Get(pedidos.IdProducto);
-
+            pedidos.Usuario = usuarioDAL.Get(pedidos.IdUsuario);
 
            
 
