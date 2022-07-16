@@ -9,6 +9,8 @@ namespace BackEnd.Entities
     {
         public BD_REDBOX_DISTRIBUIDORAContext()
         {
+            var optionsBuilder = new DbContextOptionsBuilder<BD_REDBOX_DISTRIBUIDORAContext>();
+            optionsBuilder.UseSqlServer(Utilities.Util.ConnectionString);
         }
 
         public BD_REDBOX_DISTRIBUIDORAContext(DbContextOptions<BD_REDBOX_DISTRIBUIDORAContext> options)
@@ -27,19 +29,26 @@ namespace BackEnd.Entities
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            if (!optionsBuilder.IsConfigured)
-            {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                /*String de conexion JOSE DOCKER*//*optionsBuilder.UseSqlServer("data source=localhost,1433;Database=BD_REDBOX_DISTRIBUIDORA;User Id=sa;Password=Fidelitas123;");*/
-                /*String de conexion Robe*//*optionsBuilder.UseSqlServer("data source=localhost,1433;Database=BD_REDBOX_DISTRIBUIDORA;User Id=sa;Password=yourStrong(!)Password;");*/
-                /*String de conexion Drix optionsBuilder.UseSqlServer("Server=DESKTOP-LFFMPOQ\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");*/
-                /*String de conexion Gianke*/ optionsBuilder.UseSqlServer("Server=LAPTOP-KONS7N9P\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");
+            //            if (!optionsBuilder.IsConfigured)
+            //            {
+            //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+            //                /*String de conexion JOSE DOCKER*//*optionsBuilder.UseSqlServer("data source=localhost,1433;Database=BD_REDBOX_DISTRIBUIDORA;User Id=sa;Password=Fidelitas123;");*/
+            //                /*String de conexion Robe*//*optionsBuilder.UseSqlServer("data source=localhost,1433;Database=BD_REDBOX_DISTRIBUIDORA;User Id=sa;Password=yourStrong(!)Password;");*/
+            //                /*String de conexion Drix*/ optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");
+            //                /*String de conexion Gianke*//* optionsBuilder.UseSqlServer("Server=LAPTOP-KONS7N9P\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");*/
 
-            }
+            //            }
+
+            optionsBuilder.UseSqlServer(Utilities.Util.ConnectionString);
+
+
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<BitacoraErrore>(entity =>
             {
                 entity.HasKey(e => e.IdError)

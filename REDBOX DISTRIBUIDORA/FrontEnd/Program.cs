@@ -1,7 +1,17 @@
+using BackEnd.Entities;
+using BackEnd.Utilities;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+builder.Services.AddDbContext<BD_REDBOX_DISTRIBUIDORAContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DrixConnection")));
+string connString = builder.Configuration.GetConnectionString("DrixConnection");
+Util.ConnectionString = connString;
+
 
 var app = builder.Build();
 
