@@ -18,7 +18,6 @@ namespace FrontEnd.Controllers
             {
                 IdUsuario = usuario.IdUsuario,
                 Nombre = usuario.Nombre,
-                Apellido = usuario.Apellido,
                 Telefono = usuario.Telefono,
                 Cedula = usuario.Cedula,
                 Direccion = usuario.Direccion,
@@ -136,6 +135,13 @@ namespace FrontEnd.Controllers
             usuarioDAL.Remove(usuario);
 
             return RedirectToAction("Index");
+        }
+        #endregion
+
+        #region Inicio Sesion
+        public ActionResult InicioSesion()
+        {
+            return View();
         }
         #endregion
     }

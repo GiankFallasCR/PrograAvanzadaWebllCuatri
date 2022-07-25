@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UFIDE\\REDBOX\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {}
+    "D:\\UFIDE\\PROYECTO_REDBOX\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {}
   },
   "projects": {
-    "D:\\UFIDE\\REDBOX\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {
+    "D:\\UFIDE\\PROYECTO_REDBOX\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UFIDE\\REDBOX\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
+        "projectUniqueName": "D:\\UFIDE\\PROYECTO_REDBOX\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
         "projectName": "BackEnd",
-        "projectPath": "D:\\UFIDE\\REDBOX\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
+        "projectPath": "D:\\UFIDE\\PROYECTO_REDBOX\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
         "packagesPath": "C:\\Users\\mones\\.nuget\\packages\\",
-        "outputPath": "D:\\UFIDE\\REDBOX\\REDBOX DISTRIBUIDORA\\BackEnd\\obj\\",
+        "outputPath": "D:\\UFIDE\\PROYECTO_REDBOX\\REDBOX DISTRIBUIDORA\\BackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mones\\AppData\\Roaming\\NuGet\\NuGet.Config",

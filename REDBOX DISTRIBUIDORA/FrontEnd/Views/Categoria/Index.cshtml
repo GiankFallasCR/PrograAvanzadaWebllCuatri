@@ -1,40 +1,50 @@
 ﻿@model IEnumerable<FrontEnd.Models.CategoriaViewModel>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Todas las Categorías";
 }
 
-<h1>Index</h1>
+<h1>Categorías Disponibles</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-danger waves-effect waves-light">Nueva Categoría  <i class="ri-add-circle-line align-middle ms-2"></i></a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.IdCategoria)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NombreCategoria)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdCategoria)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NombreCategoria)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new {  id=item.IdCategoria }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.IdCategoria  })
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <table id="alternative-page-datatable" class="table dt-responsive nowrap w-100">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.IdCategoria)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.NombreCategoria)
+                            </th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.IdCategoria)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NombreCategoria)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Editar", "Edit", new {  id=item.IdCategoria }) |
+                                    @Html.ActionLink("Eliminar", "Delete", new { id=item.IdCategoria  })
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

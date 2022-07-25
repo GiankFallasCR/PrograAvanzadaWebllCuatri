@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "PsIuUL8zaNZGxFBBnhfEfIpmBy6ePYeXTP2mWqLI6YcPBoeJfFdgyJmQGXWiLbA9W+9UX0y203oqA5evXSTe9g==",
+  "dgSpecHash": "ByRryv2IZK6CkBx7xKjrfPeIHLx2omDteoX44Vj6DW61bs5phX7nAmBjldp7JNUjBDVl8eVbPKBj+3U9eFhqEQ==",
   "success": true,
-  "projectFilePath": "D:\\UFIDE\\REDBOX\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj",
+  "projectFilePath": "D:\\UFIDE\\PROYECTO_REDBOX\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mones\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\mones\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mones\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\mones\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\mones\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
@@ -36,6 +36,7 @@
     "C:\\Users\\mones\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.6\\microsoft.entityframeworkcore.6.0.6.nupkg.sha512",
     "C:\\Users\\mones\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.6\\microsoft.entityframeworkcore.abstractions.6.0.6.nupkg.sha512",
     "C:\\Users\\mones\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.6\\microsoft.entityframeworkcore.analyzers.6.0.6.nupkg.sha512",
+    "C:\\Users\\mones\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.6\\microsoft.entityframeworkcore.design.6.0.6.nupkg.sha512",
     "C:\\Users\\mones\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.6\\microsoft.entityframeworkcore.relational.6.0.6.nupkg.sha512",
     "C:\\Users\\mones\\.nuget\\packages\\microsoft.entityframeworkcore.relational.design\\1.1.6\\microsoft.entityframeworkcore.relational.design.1.1.6.nupkg.sha512",
     "C:\\Users\\mones\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.6\\microsoft.entityframeworkcore.sqlserver.6.0.6.nupkg.sha512",

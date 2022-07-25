@@ -3,8 +3,8 @@
     ViewData["Title"] = "Error";
 }
 
-<h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>
+@*<h1 class="text-danger">Error.</h1>
+<h2 class="text-danger">An error occurred while processing your request.</h2>*@
 
 @if (Model.ShowRequestId)
 {
@@ -13,7 +13,23 @@
     </p>
 }
 
-<h3>Development Mode</h3>
+<div class="my-5 pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center my-5">
+                    <h1 class="fw-bold text-error">4 <span class="error-text">0<img src="~/assets/images/error-img.png" alt="error-img" class="error-img"></span> 4</h1>
+                    <h3 class="text-uppercase">Perdón, página no encontrada.</h3>
+                    <div class="mt-5 text-center">
+                        <a class="btn btn-primary waves-effect waves-light" href="@Url.Action("Index","Home")">Volver al Inicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*<h3>Development Mode</h3>
 <p>
     Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.
 </p>
@@ -22,4 +38,4 @@
     It can result in displaying sensitive information from exceptions to end users.
     For local debugging, enable the <strong>Development</strong> environment by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>
     and restarting the app.
-</p>
+</p>*@

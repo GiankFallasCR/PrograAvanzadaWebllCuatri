@@ -9,8 +9,6 @@ namespace BackEnd.Entities
     {
         public BD_REDBOX_DISTRIBUIDORAContext()
         {
-            var optionsBuilder = new DbContextOptionsBuilder<BD_REDBOX_DISTRIBUIDORAContext>();
-            optionsBuilder.UseSqlServer(Utilities.Util.ConnectionString);
         }
 
         public BD_REDBOX_DISTRIBUIDORAContext(DbContextOptions<BD_REDBOX_DISTRIBUIDORAContext> options)
@@ -29,26 +27,15 @@ namespace BackEnd.Entities
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //            if (!optionsBuilder.IsConfigured)
-            //            {
-            //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-            //                /*String de conexion JOSE DOCKER*//*optionsBuilder.UseSqlServer("data source=localhost,1433;Database=BD_REDBOX_DISTRIBUIDORA;User Id=sa;Password=Fidelitas123;");*/
-            //                /*String de conexion Robe*//*optionsBuilder.UseSqlServer("data source=localhost,1433;Database=BD_REDBOX_DISTRIBUIDORA;User Id=sa;Password=yourStrong(!)Password;");*/
-            //                /*String de conexion Drix*/ optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");
-            //                /*String de conexion Gianke*//* optionsBuilder.UseSqlServer("Server=LAPTOP-KONS7N9P\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");*/
-
-            //            }
-
-            optionsBuilder.UseSqlServer(Utilities.Util.ConnectionString);
-
-
+            if (!optionsBuilder.IsConfigured)
+            {
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+                optionsBuilder.UseSqlServer("Server=DESKTOP-J73573L\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");
+            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
-            base.OnModelCreating(modelBuilder);
-
             modelBuilder.Entity<BitacoraErrore>(entity =>
             {
                 entity.HasKey(e => e.IdError)
@@ -119,6 +106,8 @@ namespace BackEnd.Entities
 
                 entity.Property(e => e.IdPedido).HasColumnName("ID_PEDIDO");
 
+                entity.Property(e => e.CantidadProducto).HasColumnName("CANTIDAD_PRODUCTO");
+
                 entity.Property(e => e.FechaPedido)
                     .HasColumnType("datetime")
                     .HasColumnName("FECHA_PEDIDO");
@@ -180,7 +169,9 @@ namespace BackEnd.Entities
 
                 entity.Property(e => e.PrecioProducto).HasColumnName("PRECIO_PRODUCTO");
 
-                entity.Property(e => e.RutaImagen).HasColumnName("RUTA_IMAGEN");
+                entity.Property(e => e.RutaImagen)
+                    .HasColumnType("image")
+                    .HasColumnName("RUTA_IMAGEN");
 
                 entity.Property(e => e.TallaProducto)
                     .HasMaxLength(10)
@@ -255,11 +246,6 @@ namespace BackEnd.Entities
 
                 entity.Property(e => e.IdUsuario).HasColumnName("ID_USUARIO");
 
-                entity.Property(e => e.Apellido)
-                    .HasMaxLength(80)
-                    .IsUnicode(false)
-                    .HasColumnName("APELLIDO");
-
                 entity.Property(e => e.Cedula)
                     .HasMaxLength(20)
                     .IsUnicode(false)
@@ -277,7 +263,6 @@ namespace BackEnd.Entities
                 entity.Property(e => e.IdRol).HasColumnName("ID_ROL");
 
                 entity.Property(e => e.Nombre)
-                    .HasMaxLength(50)
                     .IsUnicode(false)
                     .HasColumnName("NOMBRE");
 

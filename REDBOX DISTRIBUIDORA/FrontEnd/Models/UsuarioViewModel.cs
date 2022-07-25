@@ -7,10 +7,8 @@ namespace FrontEnd.Models
     {
         [Display(Name = "ID")]
         public int IdUsuario { get; set; }
-        [Display(Name = "Nombre")]
+        [Display(Name = "Nombre Completo")]
         public string Nombre { get; set; } = null!;
-        [Display(Name = "Apellido")]
-        public string Apellido { get; set; } = null!;
         [Display(Name = "Telefono")]
         public string Telefono { get; set; } = null!;
         [Display(Name = "Cedula")]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xBktFzbE9dil2PekfpD0PhEEibvcbGeLi2qyCt5km0sfdx5xIeMLsZdH2nPGd2hQy0r0Zo/WFyjfrUswICRzig==",
+  "dgSpecHash": "ZL4L2pUNXVmIzw9GDvt644FFQiAr99S9zbfXOSXqxnz7Xq/dHZ46AscIdDCy3ZvdEmVa3EYAbDAaOvaKojoQoA==",
   "success": true,
-  "projectFilePath": "D:\\UFIDE\\REDBOX\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
+  "projectFilePath": "D:\\UFIDE\\PROYECTO_REDBOX\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mones\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mones\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
