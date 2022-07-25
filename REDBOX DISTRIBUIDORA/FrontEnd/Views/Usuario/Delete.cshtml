@@ -1,24 +1,24 @@
 ﻿@model FrontEnd.Models.UsuarioViewModel
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Eliminar";
 }
 
-<h1>Delete</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Está seguro que quiere eliminar el usuario?</h3>
 <div>
-    <h4>UsuarioViewModel</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-5">
             @Html.DisplayNameFor(model => model.NombreUsuario)
+            @Html.DisplayFor(model => model.Nombre)
+
         </dt>
     </dl>
     
     <form asp-action="Delete">
         @Html.HiddenFor(Model=>Model.IdUsuario)
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="Index">Regresar a la lista de usuarios</a>
     </form>
 </div>

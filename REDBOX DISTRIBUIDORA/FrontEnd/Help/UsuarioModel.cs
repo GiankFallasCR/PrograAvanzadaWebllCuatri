@@ -27,7 +27,7 @@ namespace FrontEnd.Help
                 string nombreH = Datos?.Nombre;
                 usuarioobj.Nombre = nombreH.ToString();
                 usuarioobj.Cedula = identificacion.ToString();
-
+                usuarioobj.NombreUsuario = identificacion.ToString();
 
                 return usuarioobj;
 
