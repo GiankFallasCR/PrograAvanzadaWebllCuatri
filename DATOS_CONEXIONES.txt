@@ -1,0 +1,14 @@
+  "ConnectionStrings": {
+
+    "DrixConnection": "Server=DESKTOP-J73573L\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Trusted_Connection=True;"
+    //"RobConnection": "data source=localhost,1433;Database=BD_REDBOX_DISTRIBUIDORA;User Id=sa;Password=yourStrong(!)Password;",
+    //"GiankConnection": "Server=LAPTOP-KONS7N9P\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Trusted_Connection=True;",
+    //"JoseRConnection": "data source=localhost,1433;Database=BD_REDBOX_DISTRIBUIDORA;User Id=sa;Password=Fidelitas123;",
+    //"SebasConnection": "Server=POR-DEFINIR\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Trusted_Connection=True;",
+    //"JuanConnection": "Server=POR-DEFINIR\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Trusted_Connection=True;"
+  },
+
+
+builder.Services.AddDbContext<BD_REDBOX_DISTRIBUIDORAContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DrixConnection")));
+string connString = builder.Configuration.GetConnectionString("DrixConnection");
+Util.ConnectionString = connString;
