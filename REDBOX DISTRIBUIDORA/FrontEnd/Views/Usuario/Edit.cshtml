@@ -1,22 +1,19 @@
 ﻿@model FrontEnd.Models.UsuarioViewModel
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar usuario";
 }
 
-<h1>Edit</h1>
-
-<h4>UsuarioViewModel</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            @Html.HiddenFor(Model=>Model.IdUsuario)
+            @Html.HiddenFor(Model => Model.IdUsuario)
 
             <div class="form-group">
                 <label asp-for="Nombre" class="control-label"></label>
-                <input asp-for="Nombre" class="form-control" />
+                <input asp-for="Nombre" class="form-control" readonly />
                 <span asp-validation-for="Nombre" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -26,7 +23,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Cedula" class="control-label"></label>
-                <input asp-for="Cedula" class="form-control" />
+                <input asp-for="Cedula" class="form-control" readonly />
                 <span asp-validation-for="Cedula" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -36,7 +33,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="NombreUsuario" class="control-label"></label>
-                <input asp-for="NombreUsuario" class="form-control" />
+                <input asp-for="NombreUsuario" class="form-control" readonly />
                 <span asp-validation-for="NombreUsuario" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -44,20 +41,22 @@
                 <input type="password" asp-for="ContraseniaUsuario" class="form-control" />
                 <span asp-validation-for="ContraseniaUsuario" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
                 <label asp-for="IDRol" class="control-label"></label>
-               @Html.DropDownListFor(model => model.IDRol, new SelectList(Model.Roles,"IdRol","DescRol"),"--Seleccione--")
+                @Html.DropDownListFor(model => model.IDRol, new SelectList(Model.Roles, "IdRol", "DescRol"), "--Seleccione--")
                 <span asp-validation-for="IDRol" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Guardar" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Regresar a la lista de usuarios</a>
 </div>
 
 @section Scripts {

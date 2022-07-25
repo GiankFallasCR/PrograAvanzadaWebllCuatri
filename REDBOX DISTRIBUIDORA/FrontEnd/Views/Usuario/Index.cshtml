@@ -35,7 +35,7 @@
                             </th>
 
 
-                            <th></th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -61,9 +61,9 @@
 
 
                                 <td>
-                                    @Html.ActionLink("Edit", "Edit", new {  id=item.IdUsuario  }) |
-                                    @Html.ActionLink("Details", "Details", new {  id=item.IdUsuario  }) |
-                                    @Html.ActionLink("Delete", "Delete", new {  id=item.IdUsuario })
+                                    @Html.ActionLink("Editar usuario", "Edit", new {  id=item.IdUsuario  }) |
+                                    @Html.ActionLink("Detalles", "Details", new {  id=item.IdUsuario  }) |
+                                    @Html.ActionLink("Eliminar", "Delete", new {  id=item.IdUsuario })
                                 </td>
                             </tr>
                         }
