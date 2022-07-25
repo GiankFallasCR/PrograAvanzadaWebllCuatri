@@ -3,6 +3,7 @@ using BackEnd.DAL.Implementations;
 using BackEnd.DAL.Interfaces;
 using BackEnd.Entities;
 using FrontEnd.Models;
+using FrontEnd.Help;
 
 namespace FrontEnd.Controllers
 {
@@ -10,6 +11,8 @@ namespace FrontEnd.Controllers
     {
         IUsuarioDAL usuarioDAL;
         IRolDAL rolDAL;
+        UsuarioModel model = new UsuarioModel();
+
 
         private UsuarioViewModel Convertir(Usuario usuario)
         {
@@ -51,15 +54,27 @@ namespace FrontEnd.Controllers
         #endregion
 
         #region Agregar
-        public IActionResult Create()
+        public IActionResult Create(UsuarioViewModel usuario)
         {
+            try
+            {
+                UsuarioViewModel usuarios = new UsuarioViewModel();
+                rolDAL = new RolDALImpl();
 
-            UsuarioViewModel usuarios = new UsuarioViewModel();
-            rolDAL = new RolDALImpl();
 
-            usuarios.Roles = rolDAL.GetAll();
+                usuarios.Cedula = usuario.Cedula.ToString();
+                usuarios.Nombre = usuario.Nombre.ToString();
+                usuarios.Roles = rolDAL.GetAll();
 
-            return View(usuarios);
+                return View(usuarios);
+            }
+            catch (Exception ex)
+            {
+                return View("Error");
+            }
+
+
+            
         }
 
         [HttpPost]
@@ -87,6 +102,32 @@ namespace FrontEnd.Controllers
             
 
             return View(usuarios);
+        }
+        #endregion
+        public IActionResult BusquedaHacienda()
+        {
+
+            return View();
+
+        }
+        #region Hacienda
+        public IActionResult Encontrado(UsuarioViewModel usuario)
+        {
+            var resultado = model.BuscarClientePorCedula(usuario.Cedula);
+
+            if (resultado == null)
+            {
+                return View("Error");
+
+            }
+            else
+            {
+                return RedirectToAction("Create", resultado);
+            }
+
+
+
+
         }
         #endregion
 
