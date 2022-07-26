@@ -6261,24 +6261,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/joseredondo/.nuget/packages/": {}
+    "C:\\Users\\giank\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/joseredondo/Desktop/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/BackEnd.csproj",
+      "projectUniqueName": "C:\\Users\\giank\\Desktop\\Progra Web\\ProyectoFinal\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
       "projectName": "BackEnd",
-      "projectPath": "/Users/joseredondo/Desktop/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/BackEnd.csproj",
-      "packagesPath": "/Users/joseredondo/.nuget/packages/",
-      "outputPath": "/Users/joseredondo/Desktop/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/obj/",
+      "projectPath": "C:\\Users\\giank\\Desktop\\Progra Web\\ProyectoFinal\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
+      "packagesPath": "C:\\Users\\giank\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\giank\\Desktop\\Progra Web\\ProyectoFinal\\REDBOX DISTRIBUIDORA\\BackEnd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/joseredondo/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\giank\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6331,7 +6333,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
