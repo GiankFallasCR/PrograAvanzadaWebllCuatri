@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\giank\\Desktop\\Progra Web\\ProyectoFinal\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {}
+    "D:\\UFIDE\\REDBOX_PROYECTO_AVNZ\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\giank\\Desktop\\Progra Web\\ProyectoFinal\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {
+    "D:\\UFIDE\\REDBOX_PROYECTO_AVNZ\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\giank\\Desktop\\Progra Web\\ProyectoFinal\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
+        "projectUniqueName": "D:\\UFIDE\\REDBOX_PROYECTO_AVNZ\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
         "projectName": "BackEnd",
-        "projectPath": "C:\\Users\\giank\\Desktop\\Progra Web\\ProyectoFinal\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
-        "packagesPath": "C:\\Users\\giank\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\giank\\Desktop\\Progra Web\\ProyectoFinal\\REDBOX DISTRIBUIDORA\\BackEnd\\obj\\",
+        "projectPath": "D:\\UFIDE\\REDBOX_PROYECTO_AVNZ\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
+        "packagesPath": "C:\\Users\\mones\\.nuget\\packages\\",
+        "outputPath": "D:\\UFIDE\\REDBOX_PROYECTO_AVNZ\\REDBOX DISTRIBUIDORA\\BackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\giank\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mones\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
