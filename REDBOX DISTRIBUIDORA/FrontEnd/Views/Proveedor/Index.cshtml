@@ -55,9 +55,9 @@
                                     @Html.DisplayFor(modelItem => item.Direccion)
                                 </td>
                                 <td>
-                                    @Html.ActionLink("Edit", "Edit", new {  id=item.IdProveedor  }) |
+                                    @Html.ActionLink("", "Edit", new {  id=item.IdProveedor  }, new {@class="btn btn-secondary w-xs ri-pencil-fill",  @title="Editar"}) |
 
-                                    @Html.ActionLink("Delete", "Delete", new { id=item.IdProveedor })
+                                    @Html.ActionLink("", "Delete", new { id=item.IdProveedor },new {@class="btn btn-danger w-xs ri-delete-bin-2-fill",  @title="Eliminar"})
                                 </td>
                             </tr>
                         }

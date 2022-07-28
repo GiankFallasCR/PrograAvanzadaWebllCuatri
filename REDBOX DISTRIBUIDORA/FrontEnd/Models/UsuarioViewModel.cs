@@ -9,11 +9,11 @@ namespace FrontEnd.Models
         public int IdUsuario { get; set; }
         [Display(Name = "Nombre Completo:")]
         public string Nombre { get; set; } = null!;
-        [Display(Name = "Telefono:")]
+        [Display(Name = "Teléfono:")]
         public string Telefono { get; set; } = null!;
-        [Display(Name = "Cedula:")]
+        [Display(Name = "Cédula:")]
         public string Cedula { get; set; } = null!;
-        [Display(Name = "Direccion:")]
+        [Display(Name = "Dirección:")]
         public string Direccion { get; set; } = null!;
         [Display(Name = "Usuario:")]
         public string NombreUsuario { get; set; } = null!;

@@ -61,9 +61,9 @@
 
 
                                 <td>
-                                    @Html.ActionLink("Editar usuario", "Edit", new {  id=item.IdUsuario  }) |
-                                    @Html.ActionLink("Detalles", "Details", new {  id=item.IdUsuario  }) |
-                                    @Html.ActionLink("Eliminar", "Delete", new {  id=item.IdUsuario })
+                                    @Html.ActionLink("", "Edit", new {  id=item.IdUsuario  }, new {@class="btn btn-secondary w-xs ri-pencil-fill",  @title="Editar Usuario"}) |
+                                    @Html.ActionLink("", "Details", new {  id=item.IdUsuario  },new {@class="btn btn-dark w-xs  ri-user-shared-2-fill",  @title="Detalles"}) |
+                                    @Html.ActionLink("", "Delete", new {  id=item.IdUsuario },new {@class="btn btn-danger w-xs ri-user-unfollow-fill",  @title="Eliminar Usuario"})
                                 </td>
                             </tr>
                         }

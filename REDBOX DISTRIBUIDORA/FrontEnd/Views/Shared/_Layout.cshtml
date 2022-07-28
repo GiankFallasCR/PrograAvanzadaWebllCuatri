@@ -696,7 +696,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
-                                Desarrollado por <i class="mdi mdi-code-json text-danger"></i> Grupo 4 - Programación Avanzada en Web.
+                                Desarrollado por <i class="mdi mdi-code-json text-danger"></i> Grupo 2 - Programación Avanzada en Web.
                             </div>
                         </div>
                     </div>
@@ -750,13 +750,32 @@
     <script src="~/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
     <script src="~/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
 
+
+    <!-- flot plugins -->
+    <script src="~/assets/libs/flot-charts/jquery.flot.js"></script>
+    <script src="~/assets/libs/flot-charts/jquery.flot.time.js"></script>
+    <script src="~/assets/libs/jquery.flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+    <script src="~/assets/libs/flot-charts/jquery.flot.resize.js"></script>
+    <script src="~/assets/libs/flot-charts/jquery.flot.pie.js"></script>
+    <script src="~/assets/libs/flot-charts/jquery.flot.selection.js"></script>
+    <script src="~/assets/libs/flot-charts/jquery.flot.stack.js"></script>
+    <script src="~/assets/libs/flot.curvedLines/curvedLines.js"></script>
+    <script src="~/assets/libs/flot-charts/jquery.flot.crosshair.js"></script>
+
+    <!-- flot init -->
+    <script src="~/assets/js/pages/flot.init.js"></script>
+
     <script src="~/assets/js/pages/dashboard.init.js"></script>
+
+    @*<script src="~/assets/js/pages/ecommerce-order-datatables.init.js"></script>*@
 
     <!-- Datatable init js -->
     <script src="~/assets/js/pages/datatables.init.js"></script>
 
+    
+
     <!-- App js -->
     <script src="~/assets/js/app.js"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

@@ -4,75 +4,100 @@
     ViewData["Title"] = "Todos los Pedidos";
 }
 
-<h1>Listado de Pedidos</h1>
+@section Scripts{
+    <script type="text/javascript">
 
-<p>
-    <a asp-action="Create" class="btn btn-danger waves-effect waves-light">Generar Nuevo Pedido <i class="ri-shopping-basket-line align-middle ms-2"></i></a>
-</p>
+        //$(document).ready(function () {
+        //    $('#alternative-page-datatable').DataTable({
+        //        "language": {
+        //            "url": "https://cdn.datatables.net/plug-ins/1.11.5/i18n/es-ES.json"
+        //        }
+        //    });
+        //});
 
-<div class="row">
-    <div class="col-12">
-        <div class="card">
-            <div class="card-body">
+    </script>
+}
 
-                <table id="alternative-page-datatable" class="table dt-responsive nowrap w-100">
-                    <thead>
-                        <tr>
-                            <th>
-                                @Html.DisplayNameFor(model => model.IdPedido)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.NumeroPedido)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.FechaPedido)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.IdProducto)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.IdEstado)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.IdUsuario)
-                            </th>
-                            <th>
-                                Acción
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var item in Model)
-                        {
-                            <tr>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.IdPedido)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.NumeroPedido)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.FechaPedido)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.IdProducto)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.IdEstado)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.IdUsuario)
-                                </td>
-                                <td>
-                                    @Html.ActionLink("Editar", "Edit", new { id=item.IdPedido  }) |
-                                    @Html.ActionLink("Detalles", "Details", new { id=item.IdPedido }) |
-                                    @Html.ActionLink("Eliminar", "Delete", new { id=item.IdPedido })
-                                </td>
-                            </tr>
-                        }
-                    </tbody>
-                </table>
 
+
+
+
+    <h1>Listado de Pedidos</h1>
+
+    <p>
+        <a asp-action="Create" class="btn btn-danger waves-effect waves-light">Generar Nuevo Pedido <i class="ri-shopping-basket-line align-middle ms-2"></i></a>
+    </p>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table id="alternative-page-datatable" class="table dt-responsive nowrap w-100">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.IdPedido)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.NumeroPedido)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.FechaPedido)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.IdProducto)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.IdEstado)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.IdUsuario)
+                                    </th>
+                                    <th>
+                                        Acción
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.IdPedido)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.NumeroPedido)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.FechaPedido)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.IdProducto)
+                                    </td>
+                                    <td>
+                                        <div class="badge badge-soft-success font-size-12">
+
+                                            @Html.DisplayFor(modelItem => item.IdEstado, new { @class = "badge badge-soft-success"})
+
+                                        </div>
+
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.IdUsuario)
+                                    </td>
+                                    <td>
+
+                                        @Html.ActionLink("", "Edit", new { id=item.IdPedido  }, new {@class="btn btn-secondary w-xs ri-pencil-fill",  @title="Editar"}) |
+                                        @Html.ActionLink("", "Details", new { id=item.IdPedido },new {@class="btn btn-dark w-xs ri-eye-fill",  @title="Detalles"}) |
+                                        @Html.ActionLink("", "Delete", new { id=item.IdPedido },new {@class="btn btn-danger w-xs ri-delete-bin-2-fill",  @title="Eliminar"})
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                </div>
             </div>
         </div>
     </div>

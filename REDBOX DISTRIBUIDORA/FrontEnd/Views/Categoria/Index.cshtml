@@ -37,8 +37,8 @@
                                     @Html.DisplayFor(modelItem => item.NombreCategoria)
                                 </td>
                                 <td>
-                                    @Html.ActionLink("Editar", "Edit", new {  id=item.IdCategoria }) |
-                                    @Html.ActionLink("Eliminar", "Delete", new { id=item.IdCategoria  })
+                                    @Html.ActionLink("", "Edit", new {  id=item.IdCategoria },new {@class="btn btn-secondary w-xs ri-pencil-fill",  @title="Editar"}) |
+                                    @Html.ActionLink("", "Delete", new { id=item.IdCategoria  },new {@class="btn btn-danger w-xs ri-delete-bin-2-fill",  @title="Eliminar"})
                                 </td>
                             </tr>
                         }
