@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4rygIPSGOcXMJQSHeRck6JjPzcI0WztxgakXAxboNFk=",
+  "Hash": "TAews8E58aEggEXgS9Hpha2LlblC4q/ZqA9mxtixQZs=",
   "Source": "FrontEnd",
   "BasePath": "_content/FrontEnd",
   "Mode": "Default",
@@ -1800,6 +1800,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\megamenu-img.png"
+    },
+    {
+      "Identity": "D:\\UFIDE\\REDBOX_PROYECTO_AVNZ\\REDBOX DISTRIBUIDORA\\FrontEnd\\wwwroot\\assets\\images\\product\\gorraadidas.jpg",
+      "SourceId": "FrontEnd",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\UFIDE\\REDBOX_PROYECTO_AVNZ\\REDBOX DISTRIBUIDORA\\FrontEnd\\wwwroot\\",
+      "BasePath": "_content/FrontEnd",
+      "RelativePath": "assets/images/product/gorraadidas.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\product\\gorraadidas.jpg"
     },
     {
       "Identity": "D:\\UFIDE\\REDBOX_PROYECTO_AVNZ\\REDBOX DISTRIBUIDORA\\FrontEnd\\wwwroot\\assets\\images\\product\\img-1.png",

@@ -1,10 +1,135 @@
 ﻿@model FrontEnd.Models.ProductoViewModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Añadir Producto";
 }
 
-<h1>Create</h1>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="card-title">Registrar un Nuevo Producto</h4>
+                <p class="card-title-desc">
+                    Complete todos los campos para añadir un nuevo producto al inventario.
+                </p>
+                <form asp-action="Create">
+                    <div class="row mb-3">
+                        <label asp-for="NombreProducto" class="col-sm-2 col-form-label"></label>
+                        <div class="col-sm-10">
+                            <input asp-for="NombreProducto" class="form-control" />
+                            <span asp-validation-for="NombreProducto" class="text-danger"></span>
+                        </div>
+
+                    </div>
+                    <!-- end row -->
+                    <div class="row mb-3">
+                        <label asp-for="PrecioProducto" class="col-sm-2 col-form-label"></label>
+                        <div class="col-sm-10">
+                            <input asp-for="PrecioProducto" class="form-control" />
+                            <span asp-validation-for="PrecioProducto" class="text-danger"></span>
+                        </div>
+
+                    </div>
+                    <!-- end row -->
+                    <div class="row mb-3">
+                        <label asp-for="CantidadDisponible" class="col-sm-2 col-form-label"></label>
+                        <div class="col-sm-10">
+                            <input asp-for="CantidadDisponible" class="form-control" />
+                            <span asp-validation-for="CantidadDisponible" class="text-danger"></span>
+                        </div>
+
+                    </div>
+                    <!-- end row -->
+                    <div class="row mb-3">
+                        <label asp-for="TallaProducto" class="col-sm-2 col-form-label"></label>
+                        <div class="col-sm-10">
+                            <input asp-for="TallaProducto" class="form-control" />
+                            <span asp-validation-for="TallaProducto" class="text-danger"></span>
+                        </div>
+
+                    </div>
+                    <!-- end row -->
+                    <div class="row mb-3">
+                        <label asp-for="FechaActualizacion" class="col-sm-2 col-form-label"></label>
+                        <div class="col-sm-10">
+                            <input asp-for="FechaActualizacion" class="form-control" />
+                            <span asp-validation-for="FechaActualizacion" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                    <div class="row mb-3">
+                        <label asp-for="FechaRegistro" class="col-sm-2 col-form-label"></label>
+                        <div class="col-sm-10">
+                            <input asp-for="FechaRegistro" class="form-control" />
+                            <span asp-validation-for="FechaRegistro" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                    <div class="row mb-3">
+                        <label asp-for="IdCategoria" class="col-sm-2 col-form-label"></label>
+                        <div class="col-sm-10">
+                            @Html.DropDownListFor(model => model.IdCategoria, new SelectList(Model.Categorias,"IdCategoria","NombreCategoria"),"--Seleccione--", new{@class="form-select"})
+                            <span asp-validation-for="IdCategoria" class="text-danger"></span>
+                        </div>
+
+                    </div>
+                    <!-- end row -->
+                    <div class="row mb-3">
+                        <label asp-for="IdProveedor" class="col-sm-2 col-form-label"></label>
+                        <div class="col-sm-10">
+                            @Html.DropDownListFor(model => model.IdProveedor, new SelectList(Model.Proveedores,"IdProveedor","NombreProveedor"),"--Seleccione--", new{@class="form-select"})
+                            <span asp-validation-for="IdProveedor" class="text-danger"></span>
+                        </div>
+
+                    </div>
+                    <!-- end row -->
+                    @*<h4 class="card-title">Imagen del Producto</h4>
+                    <p class="card-title-desc">Cargue la imagen del producto en este espacio.</p>
+                    <br />
+                    <div class="input-group">
+                        <input type="file" class="form-control">
+                    </div>*@
+                    <br />
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary btn-lg waves-effect waves-light" />
+                    </div>
+                    <!-- end row -->
+                </form>
+            </div>
+        </div>
+    </div> <!-- end col -->
+</div>
+
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @*<h1>Create</h1>
 
 <h4>ProductoViewModel</h4>
 <hr />
@@ -12,7 +137,7 @@
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            
+
             <div class="form-group">
                 <label asp-for="NombreProducto" class="control-label"></label>
                 <input asp-for="NombreProducto" class="form-control" />
@@ -74,4 +199,4 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+}*@
