@@ -30,6 +30,22 @@ namespace FrontEnd.Controllers
                 RutaImagen = producto.RutaImagen
             };
         }
+        private Producto Convertir2(ProductoViewModel producto)
+        {
+            return new Producto
+            {
+                IdProducto = producto.IdProducto,
+                NombreProducto = producto.NombreProducto,
+                PrecioProducto = producto.PrecioProducto,
+                CantidadDisponible = producto.CantidadDisponible,
+                TallaProducto = producto.TallaProducto,
+                FechaActualizacion = producto.FechaActualizacion,
+                FechaRegistro = producto.FechaRegistro,
+                IdCategoria = producto.IdCategoria,
+                IdProveedor = producto.IdProveedor,
+                RutaImagen = producto.RutaImagen
+            };
+        }
 
         #region Lista
         public IActionResult Index()
@@ -62,13 +78,43 @@ namespace FrontEnd.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Producto producto)
+        public IActionResult Create(Models.ProductoViewModel producto, List<IFormFile> upload)
         {
-            productoDAL = new ProductoDALImpl();
-            productoDAL.Add(producto);
+            try
+            {
+                if (upload.Count > 0)
+                {
+                    foreach (var file in upload)
+                    {
+                        using (var ms = new MemoryStream())
+                        {
+                            file.CopyTo(ms);
+                            producto.RutaImagen = ms.ToArray();
 
-            return RedirectToAction("Details", new { id = producto.IdProducto });
-            //return RedirectToAction("Index");
+                        }
+                    }
+
+                }
+                productoDAL = new ProductoDALImpl();
+                productoDAL.Add(Convertir2(producto));
+
+                //return RedirectToAction("Details", new { id = producto.IdProducto });
+                return RedirectToAction("Index");
+                //
+
+            }
+            catch (HttpRequestException)
+            {
+                return RedirectToAction("Error", "Home");
+            }
+
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+
         }
 
         #endregion

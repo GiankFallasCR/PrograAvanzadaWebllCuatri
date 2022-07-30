@@ -37,10 +37,10 @@ namespace BackEnd.Entities
                 //optionsBuilder.UseSqlServer("data source=localhost,1433;Database=BD_REDBOX_DISTRIBUIDORA;User Id=sa;Password=yourStrong(!)Password;");
 
                 //Dario:
-                optionsBuilder.UseSqlServer("Server=DESKTOP-J73573L\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");
+                //optionsBuilder.UseSqlServer("Server=DESKTOP-J73573L\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");
 
                 //Gianca
-                //optionsBuilder.UseSqlServer("Server=LAPTOP-KONS7N9P\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=LAPTOP-KONS7N9P\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");
             }
         }
 

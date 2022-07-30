@@ -42,7 +42,7 @@ namespace FrontEnd.Models
         public Proveedor Proveedor { get; set; }
 
         [Display(Name = "Imagen del Producto")]
-        public byte[]? RutaImagen { get; set; }
+        public byte[] RutaImagen { get; set; }
 
     }
 }

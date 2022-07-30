@@ -128,7 +128,12 @@
                                                 <i class="mdi mdi-heart-outline"></i>
                                             </a>
                                         </div>
-                                        <img src="~/assets/images/product/gorraadidas.jpg" alt="img-1" class="img-fluid mx-auto d-block">
+                                        @{
+                                                    string imageBase64 = Convert.ToBase64String(item.RutaImagen);
+                                                    string imageSrc = string.Format("data:ContentType = image/jpg;base64,{0}", imageBase64);
+                                                    <img src="@imageSrc"  alt="img-1" class="img-fluid mx-auto d-block"/>
+                                                }
+                                        }
                                     </div>
                                     <div class="text-center">
                                         @*<p class="font-size-12 mb-1">ID: @Html.DisplayFor(modelItem => item.IdProducto)</p>*@
