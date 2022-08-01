@@ -16,7 +16,7 @@ namespace FrontEnd.Controllers
 
         private UsuarioViewModel Convertir(Usuario usuario)
         {
-            
+
             return new UsuarioViewModel
             {
                 IdUsuario = usuario.IdUsuario,
@@ -27,7 +27,7 @@ namespace FrontEnd.Controllers
                 NombreUsuario = usuario.NombreUsuario,
                 ContraseniaUsuario = usuario.ContraseniaUsuario,
                 IDRol = usuario.IdRol,
-                             
+
 
 
 
@@ -74,7 +74,7 @@ namespace FrontEnd.Controllers
             }
 
 
-            
+
         }
 
         [HttpPost]
@@ -91,15 +91,15 @@ namespace FrontEnd.Controllers
         #region Detalles
         public IActionResult Details(int id)
         {
-            
+
             usuarioDAL = new UsuarioDALImpl();
             UsuarioViewModel usuarios = Convertir(usuarioDAL.Get(id));
 
             rolDAL = new RolDALImpl();
-            
+
 
             usuarios.Rol = rolDAL.Get(usuarios.IDRol);
-            
+
 
             return View(usuarios);
         }
@@ -184,6 +184,41 @@ namespace FrontEnd.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Acceder(string NombreUsuario, string ContraseniaUsuario)
+        {
+
+            UsuarioViewModel objvacio = new UsuarioViewModel();
+
+            try
+            {
+                var resultado = model.BuscarLogin(NombreUsuario, ContraseniaUsuario);
+                if (resultado.NombreUsuario != null)
+                {
+                    resultado.Nombre = HttpContext.Session.GetString("nombre");
+                    resultado.NombreUsuario = HttpContext.Session.GetString("usuario");
+
+                    string rol = resultado.IDRol.ToString();
+
+                    rol = HttpContext.Session.GetString("rol");
+
+                    //return Json(resultado, JsonRequestBehavior.AllowGet);
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    return View("Error");
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+
         #endregion
     }
 }

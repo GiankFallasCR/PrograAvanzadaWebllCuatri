@@ -7,11 +7,52 @@ namespace FrontEnd.Help
 {
     public class UsuarioModel
     {
+        UsuarioViewModel usuarioobj = new UsuarioViewModel();
+        private BackEnd.Entities.BD_REDBOX_DISTRIBUIDORAContext _db = null;
+        private bool _UsingExternalConnection;
 
+        public UsuarioViewModel BuscarLogin(string usuario, string contasennia)
+        {
+
+            this._db = new BackEnd.Entities.BD_REDBOX_DISTRIBUIDORAContext();
+            this._UsingExternalConnection = false;
+
+            try
+            {
+                using (var context = _db)
+                {
+                    try
+                    {
+                        var consultaUsuario = (from u in context.Usuarios
+                                               where u.NombreUsuario == usuario && u.ContraseniaUsuario == contasennia
+                                               select u);
+                        foreach (var item in consultaUsuario)
+                        {
+                            usuarioobj.Nombre = item.Nombre.ToString();
+                            usuarioobj.IDRol = item.IdRol;
+                            usuarioobj.NombreUsuario = item.NombreUsuario.ToString();
+                        }
+                        _db.Dispose();
+                        return usuarioobj;
+
+                    }
+                    catch (Exception)
+                    {
+
+                        throw;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+        }
 
         public UsuarioViewModel BuscarClientePorCedula(string identificacion)
         {
-            UsuarioViewModel usuarioobj = new UsuarioViewModel();
+
 
 
             string direccion = "https://api.hacienda.go.cr/fe/ae";
