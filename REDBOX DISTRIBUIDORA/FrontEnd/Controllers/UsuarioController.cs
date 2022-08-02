@@ -194,14 +194,15 @@ namespace FrontEnd.Controllers
             try
             {
                 var resultado = model.BuscarLogin(NombreUsuario, ContraseniaUsuario);
-                if (resultado.NombreUsuario != null)
+                if (resultado != null)
                 {
-                    resultado.Nombre = HttpContext.Session.GetString("nombre");
-                    resultado.NombreUsuario = HttpContext.Session.GetString("usuario");
-
+                    string nombre = resultado.Nombre;
+                    string usuario = resultado.NombreUsuario;
                     string rol = resultado.IDRol.ToString();
 
-                    rol = HttpContext.Session.GetString("rol");
+                    HttpContext.Session.SetString("nombre",nombre);
+                    HttpContext.Session.SetString("usuario", usuario);
+                    HttpContext.Session.SetString("rol", rol);
 
                     //return Json(resultado, JsonRequestBehavior.AllowGet);
                     return RedirectToAction("Index", "Home");

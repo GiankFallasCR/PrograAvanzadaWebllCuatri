@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UFIDE\\REDBOX_PROY_ANVZ\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {}
+    "/Users/joseredondo/Desktop/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/BackEnd.csproj": {}
   },
   "projects": {
-    "D:\\UFIDE\\REDBOX_PROY_ANVZ\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {
+    "/Users/joseredondo/Desktop/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/BackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UFIDE\\REDBOX_PROY_ANVZ\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
+        "projectUniqueName": "/Users/joseredondo/Desktop/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/BackEnd.csproj",
         "projectName": "BackEnd",
-        "projectPath": "D:\\UFIDE\\REDBOX_PROY_ANVZ\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
-        "packagesPath": "C:\\Users\\mones\\.nuget\\packages\\",
-        "outputPath": "D:\\UFIDE\\REDBOX_PROY_ANVZ\\REDBOX DISTRIBUIDORA\\BackEnd\\obj\\",
+        "projectPath": "/Users/joseredondo/Desktop/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/BackEnd.csproj",
+        "packagesPath": "/Users/joseredondo/.nuget/packages/",
+        "outputPath": "/Users/joseredondo/Desktop/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mones\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/joseredondo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.7, )"
@@ -74,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
         }
       }
     }
