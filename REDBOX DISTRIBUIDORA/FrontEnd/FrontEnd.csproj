@@ -57,6 +57,7 @@
 
   <ItemGroup>
     <None Remove="Microsoft.AspNetCore.Session" />
+    <None Remove="Permisos\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\assets\libs\datatables.net-autofill-bs4\node_modules\jquery\external\sizzle\sizzle.min.js" />
@@ -189,6 +190,7 @@
     <Folder Include="wwwroot\assets\libs\toastr\node_modules\jquery\src\" />
     <Folder Include="wwwroot\assets\libs\toastr\tests\" />
     <Folder Include="wwwroot\assets\libs\twitter-bootstrap-wizard\examples\" />
+    <Folder Include="Permisos\" />
   </ItemGroup>
 
 </Project>

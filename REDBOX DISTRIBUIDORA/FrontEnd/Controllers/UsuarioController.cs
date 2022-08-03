@@ -4,6 +4,7 @@ using BackEnd.DAL.Interfaces;
 using BackEnd.Entities;
 using FrontEnd.Models;
 using FrontEnd.Help;
+using FrontEnd.Permisos;
 
 namespace FrontEnd.Controllers
 {
@@ -180,12 +181,15 @@ namespace FrontEnd.Controllers
         #endregion
 
         #region Inicio Sesion
+        [validacionSesionError]
         public ActionResult InicioSesion()
         {
             return View();
         }
 
+        
         [HttpPost]
+        
         public ActionResult Acceder(string NombreUsuario, string ContraseniaUsuario)
         {
 
