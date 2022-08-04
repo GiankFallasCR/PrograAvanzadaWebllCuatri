@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -190,7 +190,6 @@
     <Folder Include="wwwroot\assets\libs\toastr\node_modules\jquery\src\" />
     <Folder Include="wwwroot\assets\libs\toastr\tests\" />
     <Folder Include="wwwroot\assets\libs\twitter-bootstrap-wizard\examples\" />
-    <Folder Include="Permisos\" />
   </ItemGroup>
 
 </Project>
