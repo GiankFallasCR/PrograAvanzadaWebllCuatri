@@ -2,6 +2,7 @@
 using BackEnd.DAL.Interfaces;
 using BackEnd.Entities;
 using FrontEnd.Models;
+using FrontEnd.Permisos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FrontEnd.Controllers
@@ -21,6 +22,7 @@ namespace FrontEnd.Controllers
             };
         }
         #region Lista
+        [ValidacionPermisoCategoria]
         public IActionResult Index()
         {
             List<Categorium> categorias;
@@ -39,6 +41,7 @@ namespace FrontEnd.Controllers
         #endregion
 
         #region Agregar
+        [ValidacionPermisoCategoria]
         public IActionResult Create()
         {
 
@@ -46,6 +49,7 @@ namespace FrontEnd.Controllers
         }
 
         [HttpPost]
+        [ValidacionPermisoCategoria]
         public IActionResult Create(Categorium categoria)
         {
             categoriaDAL = new CategoriaDALImpl();
@@ -57,7 +61,7 @@ namespace FrontEnd.Controllers
         #endregion
 
         #region Editar
-
+        [ValidacionPermisoCategoria]
         public IActionResult Edit(int id)
         {
 
@@ -67,6 +71,7 @@ namespace FrontEnd.Controllers
         }
 
         [HttpPost]
+        [ValidacionPermisoCategoria]
         public IActionResult Edit(Categorium categoria)
         {
 
@@ -78,10 +83,10 @@ namespace FrontEnd.Controllers
 
         #endregion
 
-       
+
 
         #region Eliminar
-
+        [ValidacionPermisoCategoria]
         public IActionResult Delete(int id)
         {
 
@@ -93,6 +98,7 @@ namespace FrontEnd.Controllers
         }
 
         [HttpPost]
+        [ValidacionPermisoCategoria]
         public IActionResult Delete(Categorium categoria)
         {
 

@@ -5,33 +5,125 @@
 }
 
 @*<h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>*@
+    <h2 class="text-danger">An error occurred while processing your request.</h2>*@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Distribuidora RedBox</title>
+    @*    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/FrontEnd.styles.css" asp-append-version="true" />*@
 
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="~/assets/images/favicon.ico">
 
-<div class="my-5 pt-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="text-center my-5">
-                    <h1 class="fw-bold text-error">4 <span class="error-text">0<img src="~/assets/images/error-img.png" alt="error-img" class="error-img"></span> 4</h1>
-                    <h3 class="text-uppercase">Perdón, página no encontrada.</h3>
-                    <div class="mt-5 text-center">
-                        <a class="btn btn-primary waves-effect waves-light" href="@Url.Action("Index","Home")">Volver al Inicio</a>
+    <!-- jquery.vectormap css -->
+    <link href="~/assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+
+    <!-- DataTables -->
+    <link href="~/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/libs/datatables.net-select-bs4/css//select.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Responsive datatable examples -->
+    <link href="~/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap Css -->
+    <link href="~/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="~/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="~/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <div class="my-5 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center my-5">
+                        <h1 class="fw-bold text-error">4 <span class="error-text">0<img src="~/assets/images/error-img.png" alt="error-img" class="error-img"></span> 4</h1>
+                        <h3 class="text-uppercase">Perdón, la página no ha sido encontrada o no cuenta con los permisos necesarios para acceder a ella. Contacte al administrador.</h3>
+                        <div class="mt-5 text-center">
+                            <a class="btn btn-primary waves-effect waves-light" href="@Url.Action("InicioSesion","Usuario")">Volver al Inicio</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
+
+    <script src="~/assets/libs/jquery/jquery.min.js"></script>
+    <script src="~/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="~/assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="~/assets/libs/node-waves/waves.min.js"></script>
+
+
+    <!-- apexcharts -->
+    <script src="~/assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- jquery.vectormap map -->
+    <script src="~/assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="~/assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-us-merc-en.js"></script>
+
+    <!-- Required datatable js -->
+    <script src="~/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="~/assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <!-- Buttons examples -->
+    <script src="~/assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+    <script src="~/assets/libs/jszip/jszip.min.js"></script>
+    <script src="~/assets/libs/pdfmake/build/pdfmake.min.js"></script>
+    <script src="~/assets/libs/pdfmake/build/vfs_fonts.js"></script>
+    <script src="~/assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="~/assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="~/assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+
+    <script src="~/assets/libs/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="~/assets/libs/datatables.net-select/js/dataTables.select.min.js"></script>
+
+    <!-- Responsive examples -->
+    <script src="~/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+
+    <!-- flot plugins -->
+    <script src="~/assets/libs/flot-charts/jquery.flot.js"></script>
+    <script src="~/assets/libs/flot-charts/jquery.flot.time.js"></script>
+    <script src="~/assets/libs/jquery.flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+    <script src="~/assets/libs/flot-charts/jquery.flot.resize.js"></script>
+    <script src="~/assets/libs/flot-charts/jquery.flot.pie.js"></script>
+    <script src="~/assets/libs/flot-charts/jquery.flot.selection.js"></script>
+    <script src="~/assets/libs/flot-charts/jquery.flot.stack.js"></script>
+    <script src="~/assets/libs/flot.curvedLines/curvedLines.js"></script>
+    <script src="~/assets/libs/flot-charts/jquery.flot.crosshair.js"></script>
+
+    <!-- flot init -->
+    <script src="~/assets/js/pages/flot.init.js"></script>
+
+    <script src="~/assets/js/pages/dashboard.init.js"></script>
+
+    @*<script src="~/assets/js/pages/ecommerce-order-datatables.init.js"></script>*@
+
+    <!-- Datatable init js -->
+    <script src="~/assets/js/pages/datatables.init.js"></script>
+
+</body>
+</html>
+
 
 @*<h3>Development Mode</h3>
-<p>
-    Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.
-</p>
-<p>
-    <strong>The Development environment shouldn't be enabled for deployed applications.</strong>
-    It can result in displaying sensitive information from exceptions to end users.
-    For local debugging, enable the <strong>Development</strong> environment by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>
-    and restarting the app.
-</p>*@
+    <p>
+        Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.
+    </p>
+    <p>
+        <strong>The Development environment shouldn't be enabled for deployed applications.</strong>
+        It can result in displaying sensitive information from exceptions to end users.
+        For local debugging, enable the <strong>Development</strong> environment by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>
+        and restarting the app.
+    </p>*@

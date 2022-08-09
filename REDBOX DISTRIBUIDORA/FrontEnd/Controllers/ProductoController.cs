@@ -2,6 +2,7 @@
 using BackEnd.DAL.Interfaces;
 using BackEnd.Entities;
 using FrontEnd.Models;
+using FrontEnd.Permisos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FrontEnd.Controllers
@@ -48,6 +49,7 @@ namespace FrontEnd.Controllers
         }
 
         #region Lista
+        [ValidacionPermisoProducto]
         public IActionResult Index()
         {
             List<Producto> productos;
@@ -64,7 +66,8 @@ namespace FrontEnd.Controllers
         }
         #endregion
 
-        #region Crear 
+        #region Crear
+        [ValidacionPermisoProducto]
         public IActionResult Create()
         {
             ProductoViewModel productos = new ProductoViewModel();
@@ -78,6 +81,7 @@ namespace FrontEnd.Controllers
         }
 
         [HttpPost]
+        [ValidacionPermisoProducto]
         public IActionResult Create(Models.ProductoViewModel producto, List<IFormFile> upload)
         {
             try
@@ -121,6 +125,7 @@ namespace FrontEnd.Controllers
 
 
         #region Detalles
+        [ValidacionPermisoProducto]
         public IActionResult Details(int id)
         {
             productoDAL = new ProductoDALImpl();
@@ -137,6 +142,7 @@ namespace FrontEnd.Controllers
         #endregion
 
         #region Editar
+        [ValidacionPermisoProducto]
         public IActionResult Edit(int id)
         {
             productoDAL = new ProductoDALImpl();
@@ -152,6 +158,7 @@ namespace FrontEnd.Controllers
         }
 
         [HttpPost]
+        [ValidacionPermisoProducto]
         public IActionResult Edit(Producto producto)
         {
             productoDAL = new ProductoDALImpl();
@@ -162,7 +169,8 @@ namespace FrontEnd.Controllers
         #endregion
 
 
-        #region Eliminar 
+        #region Eliminar
+        [ValidacionPermisoProducto]
         public IActionResult Delete(int id)
         {
             productoDAL = new ProductoDALImpl();
@@ -173,6 +181,7 @@ namespace FrontEnd.Controllers
         }
 
         [HttpPost]
+        [ValidacionPermisoProducto]
         public IActionResult Delete(Producto producto)
         {
             productoDAL = new ProductoDALImpl();

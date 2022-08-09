@@ -1,4 +1,5 @@
 ﻿using FrontEnd.Models;
+using FrontEnd.Permisos;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -12,7 +13,7 @@ namespace FrontEnd.Controllers
         {
             _logger = logger;
         }
-
+        [ValidarSesionErrorNoLogueado]
         public IActionResult Index()
         {
             return View();

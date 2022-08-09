@@ -37,6 +37,7 @@ namespace FrontEnd.Controllers
 
 
         #region Lista
+        [ValidacionPermisoUsuarios]
         public IActionResult Index()
         {
             List<Usuario> usuarios;
@@ -55,6 +56,7 @@ namespace FrontEnd.Controllers
         #endregion
 
         #region Agregar
+        [ValidacionPermisoUsuarios]
         public IActionResult Create(UsuarioViewModel usuario)
         {
             try
@@ -79,6 +81,7 @@ namespace FrontEnd.Controllers
         }
 
         [HttpPost]
+        [ValidacionPermisoUsuarios]
         public IActionResult Create(Usuario usuario)
         {
             usuarioDAL = new UsuarioDALImpl();
@@ -90,6 +93,7 @@ namespace FrontEnd.Controllers
         #endregion
 
         #region Detalles
+        [ValidacionPermisoUsuarios]
         public IActionResult Details(int id)
         {
 
@@ -105,6 +109,8 @@ namespace FrontEnd.Controllers
             return View(usuarios);
         }
         #endregion
+
+        [ValidacionPermisoUsuarios]
         public IActionResult BusquedaHacienda()
         {
 
@@ -112,6 +118,7 @@ namespace FrontEnd.Controllers
 
         }
         #region Hacienda
+        [ValidacionPermisoUsuarios]
         public IActionResult Encontrado(UsuarioViewModel usuario)
         {
             var resultado = model.BuscarClientePorCedula(usuario.Cedula);
@@ -133,7 +140,7 @@ namespace FrontEnd.Controllers
         #endregion
 
         #region Editar
-
+        [ValidacionPermisoUsuarios]
         public IActionResult Edit(int id)
         {
 
@@ -149,6 +156,7 @@ namespace FrontEnd.Controllers
         }
 
         [HttpPost]
+        [ValidacionPermisoUsuarios]
         public IActionResult Edit(Usuario usuario)
         {
 
@@ -160,7 +168,8 @@ namespace FrontEnd.Controllers
 
         #endregion
 
-        #region Eliminar 
+        #region Eliminar
+        [ValidacionPermisoUsuarios]
         public IActionResult Delete(int id)
         {
             usuarioDAL = new UsuarioDALImpl();
@@ -171,6 +180,7 @@ namespace FrontEnd.Controllers
         }
 
         [HttpPost]
+        [ValidacionPermisoUsuarios]
         public IActionResult Delete(Usuario usuario)
         {
             usuarioDAL = new UsuarioDALImpl();
@@ -181,6 +191,7 @@ namespace FrontEnd.Controllers
         #endregion
 
         #region Inicio Sesion
+
         [validacionSesionError]
         public ActionResult InicioSesion()
         {
@@ -225,5 +236,16 @@ namespace FrontEnd.Controllers
 
 
         #endregion
+
+        public ActionResult Logout()
+        {
+
+
+            HttpContext.Session.Clear();
+
+            return RedirectToAction("InicioSesion");
+
+
+        }
     }
 }

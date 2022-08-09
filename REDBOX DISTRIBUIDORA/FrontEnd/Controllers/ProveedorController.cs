@@ -4,6 +4,7 @@ using BackEnd.Entities;
 using FrontEnd.Models;
 using BackEnd.DAL.Interfaces;
 using BackEnd.DAL.Implementations;
+using FrontEnd.Permisos;
 
 namespace FrontEnd.Controllers
 {
@@ -26,6 +27,7 @@ namespace FrontEnd.Controllers
 
 
         #region Lista
+        [ValidacionPermisoProveedor]
         public IActionResult Index()
         {
             List<Proveedor> proveedores;
@@ -44,6 +46,7 @@ namespace FrontEnd.Controllers
         #endregion
 
         #region Agregar
+        [ValidacionPermisoProveedor]
         public IActionResult Create()
         {
 
@@ -51,6 +54,7 @@ namespace FrontEnd.Controllers
         }
 
         [HttpPost]
+        [ValidacionPermisoProveedor]
         public IActionResult Create(Proveedor proveedor)
         {
             proveedorDAL = new ProveedorDALImpl();
@@ -62,7 +66,7 @@ namespace FrontEnd.Controllers
         #endregion
 
         #region Editar
-
+        [ValidacionPermisoProveedor]
         public IActionResult Edit(int id)
         {
 
@@ -72,6 +76,7 @@ namespace FrontEnd.Controllers
         }
 
         [HttpPost]
+        [ValidacionPermisoProveedor]
         public IActionResult Edit(Proveedor proveedor)
         {
 
@@ -84,7 +89,7 @@ namespace FrontEnd.Controllers
         #endregion
 
         #region Detalles
-
+        [ValidacionPermisoProveedor]
         public IActionResult Details(int id)
         {
 
@@ -100,7 +105,7 @@ namespace FrontEnd.Controllers
         #endregion
 
         #region Eliminar
-
+        [ValidacionPermisoProveedor]
         public IActionResult Delete(int id)
         {
 
