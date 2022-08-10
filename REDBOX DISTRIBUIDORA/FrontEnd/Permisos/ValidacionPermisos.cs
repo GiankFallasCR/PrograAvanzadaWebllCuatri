@@ -83,7 +83,7 @@ namespace FrontEnd.Permisos
         {
             if ((filterContext.HttpContext.Session.GetString("usuario") != null &&
                 filterContext.HttpContext.Session.GetString("rol") == "1") || // si es admin y hay sesion pasa
-                (filterContext.HttpContext.Session.GetString("usuario") != null && filterContext.HttpContext.Session.GetString("rol") == "3")|| // si es admin y hay sesion pasa
+                (filterContext.HttpContext.Session.GetString("usuario") != null && filterContext.HttpContext.Session.GetString("rol") == "2")|| // si es admin y hay sesion pasa
                 (filterContext.HttpContext.Session.GetString("usuario") != null && filterContext.HttpContext.Session.GetString("rol") == "3")) // si es director entra
             {
                 // la validaion de las funciones se hace en la interfaz limitando las funciones por rol
@@ -104,8 +104,12 @@ namespace FrontEnd.Permisos
     {
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            if (filterContext.HttpContext.Session.GetString("usuario") != null &&
-                filterContext.HttpContext.Session.GetString("rol") == "1")// si es admin y hay sesion pasa
+            if (filterContext.HttpContext.Session.GetString("usuario") != null && (filterContext.HttpContext.Session.GetString("rol") == "1")
+                || filterContext.HttpContext.Session.GetString("usuario") != null && (filterContext.HttpContext.Session.GetString("rol") == "2")
+                || filterContext.HttpContext.Session.GetString("usuario") != null && (filterContext.HttpContext.Session.GetString("rol") == "3")
+                )
+
+                
 
             {
                 // la validaion de las funciones se hace en la interfaz limitando las funciones por rol
