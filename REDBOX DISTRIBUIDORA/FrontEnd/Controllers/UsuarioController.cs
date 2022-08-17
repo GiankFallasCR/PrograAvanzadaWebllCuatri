@@ -214,10 +214,12 @@ namespace FrontEnd.Controllers
                     string nombre = resultado.Nombre;
                     string usuario = resultado.NombreUsuario;
                     string rol = resultado.IDRol.ToString();
+                    string idU = resultado.IdUsuario.ToString();
 
                     HttpContext.Session.SetString("nombre",nombre);
                     HttpContext.Session.SetString("usuario", usuario);
                     HttpContext.Session.SetString("rol", rol);
+                    HttpContext.Session.SetString("idU", idU);
 
                     //return Json(resultado, JsonRequestBehavior.AllowGet);
                     return RedirectToAction("Index", "Home");

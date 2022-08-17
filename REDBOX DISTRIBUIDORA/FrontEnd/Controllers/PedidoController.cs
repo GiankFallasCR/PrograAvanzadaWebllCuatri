@@ -24,7 +24,8 @@ namespace FrontEnd.Controllers
                 FechaPedido = pedido.FechaPedido,
                 IdEstado = (int)pedido.IdEstado,
                 IdProducto = (int)pedido.IdProducto,   
-                IdUsuario = (int)pedido.IdUsuario
+                IdUsuario = (int)pedido.IdUsuario,
+                CantidadProducto = (int)pedido.CantidadProducto
             };
         }
 
@@ -47,6 +48,60 @@ namespace FrontEnd.Controllers
             return View(lista);
         }
 
+
+        //Listado 2 para clientes, listado de 'mis pedidos'
+
+        List<MisPedidosViewModel> mipedidoobj = new List<MisPedidosViewModel>();
+        private BackEnd.Entities.BD_REDBOX_DISTRIBUIDORAContext _db = null;
+        private bool _UsingExternalConnection;
+
+        public IActionResult Index2()
+        {
+
+           int IDusuario = Int32.Parse(HttpContext.Session.GetString("idU"));
+
+            this._db = new BackEnd.Entities.BD_REDBOX_DISTRIBUIDORAContext();
+            this._UsingExternalConnection = false;
+
+            try
+            {
+                using (var context = _db)
+                {
+                    try
+                    {
+                        var consultaMiPedido = (from u in context.Pedidos
+                                                where u.IdUsuario == IDusuario
+                                                select u);
+                        foreach (var item in consultaMiPedido)
+                        {
+                            mipedidoobj.Add(new MisPedidosViewModel
+                            {
+                                IdPedido = item.IdPedido,
+                                NumeroPedido = item.NumeroPedido,
+                                FechaPedido = item.FechaPedido,
+                                IdEstado = item.IdEstado.ToString()
+                            });
+                        }
+                        _db.Dispose();
+                        return View(mipedidoobj);
+
+                    }
+                    catch (Exception)
+                    {
+
+                        throw;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+
+
+
         #endregion
 
         #region Agregar
@@ -65,14 +120,25 @@ namespace FrontEnd.Controllers
 
         }
 
+        //[HttpPost]
+        //public IActionResult Create(Pedido pedido)
+        //{
+        //    pedidoDAL = new DALPedidoIMP();
+        //    pedidoDAL.Add(pedido);
+
+        //    return RedirectToAction("Index");
+        //}
+
         [HttpPost]
-        public IActionResult Create(Pedido pedido)
+        public IActionResult Create(PedidoViewModel pedido)
         {
             pedidoDAL = new DALPedidoIMP();
-            pedidoDAL.Add(pedido);
+            pedidoDAL.setPedidoSP(pedido.IdProducto,pedido.CantidadProducto,pedido.IdUsuario,pedido.NumeroPedido,/*pedido.FechaPedido,*/pedido.IdEstado);
 
             return RedirectToAction("Index");
         }
+
+        
 
         #endregion
 

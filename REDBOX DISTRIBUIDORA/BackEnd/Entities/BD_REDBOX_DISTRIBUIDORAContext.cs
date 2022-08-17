@@ -24,6 +24,7 @@ namespace BackEnd.Entities
         public virtual DbSet<Proveedor> Proveedors { get; set; } = null!;
         public virtual DbSet<Rol> Rols { get; set; } = null!;
         public virtual DbSet<Usuario> Usuarios { get; set; } = null!;
+        public virtual DbSet<SP_Ante_Pedido_Result> SP_Ante_Pedido_Results { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -31,13 +32,13 @@ namespace BackEnd.Entities
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 //Jose:
-                optionsBuilder.UseSqlServer("Server=localhost,1433;Database=BD_REDBOX_DISTRIBUIDORA;User Id=sa;Password=Fidelitas123;");
+                //optionsBuilder.UseSqlServer("Server=localhost,1433;Database=BD_REDBOX_DISTRIBUIDORA;User Id=sa;Password=Fidelitas123;");
 
                 /*Conex Rob:*/
                 //optionsBuilder.UseSqlServer("data source=localhost,1433;Database=BD_REDBOX_DISTRIBUIDORA;User Id=sa;Password=yourStrong(!)Password;");
 
                 //Dario:
-                //optionsBuilder.UseSqlServer("Server=DESKTOP-J73573L\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=localhost;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");
 
                 //Gianca
                 //optionsBuilder.UseSqlServer("Server=LAPTOP-KONS7N9P\\SQLEXPRESS;Database=BD_REDBOX_DISTRIBUIDORA;Integrated Security=True;Trusted_Connection=True;");

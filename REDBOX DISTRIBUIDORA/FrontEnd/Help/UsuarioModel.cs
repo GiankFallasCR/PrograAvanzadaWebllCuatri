@@ -31,6 +31,7 @@ namespace FrontEnd.Help
                             usuarioobj.Nombre = item.Nombre.ToString();
                             usuarioobj.IDRol = item.IdRol;
                             usuarioobj.NombreUsuario = item.NombreUsuario.ToString();
+                            usuarioobj.IdUsuario = item.IdUsuario;
                         }
                         _db.Dispose();
                         return usuarioobj;

@@ -5,6 +5,8 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using BackEnd.Entities;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 
 namespace BackEnd.DAL
 {
@@ -126,6 +128,79 @@ namespace BackEnd.DAL
         public void RemoveRange(IEnumerable<Pedido> entities)
         {
             throw new NotImplementedException();
+        }
+
+        public bool setPedidoSP(int IdProducto, int Cantidad, int IdUsuario, string NumeroPedido, /*DateTime FechaPedido,*/ int IdEstado)
+        {
+            string resultado;
+            string sql = "[dbo].[SP_Ante_Pedido_Result] @ID_PRODUCT, @CANT_PRODUCTO, @ID_USUARIO, @NUM_PEDIDO, @ID_ESTADO";
+
+            //FechaPedido = DateTime.Today;
+
+            var param = new SqlParameter[]
+            {                
+
+                new SqlParameter()
+                {
+                    ParameterName = "@ID_PRODUCT",
+                    SqlDbType = System.Data.SqlDbType.Int,
+                    Direction = System.Data.ParameterDirection.Input,
+                    Value = IdProducto
+                },
+
+
+                new SqlParameter()
+                {
+                    ParameterName = "@CANT_PRODUCTO",
+                    SqlDbType = System.Data.SqlDbType.Int,
+                    Direction = System.Data.ParameterDirection.Input,
+                    Value = Cantidad
+                },
+
+                new SqlParameter()
+                {
+                    ParameterName = "@ID_USUARIO",
+                    SqlDbType = System.Data.SqlDbType.Int,
+                    Direction = System.Data.ParameterDirection.Input,
+                    Value = IdUsuario
+                },
+
+                new SqlParameter()
+                {
+                    ParameterName = "@NUM_PEDIDO",
+                    SqlDbType = System.Data.SqlDbType.VarChar,
+                    Direction = System.Data.ParameterDirection.Input,
+                    Size = 100,
+                    Value = NumeroPedido
+                },
+
+                //new SqlParameter()
+                //{
+                //    ParameterName = "@FECHA_PEDIDO",
+                //    SqlDbType = System.Data.SqlDbType.DateTime,
+                //    Value = FechaPedido
+                //},
+
+                new SqlParameter()
+                {
+                    ParameterName = "@ID_ESTADO",
+                    SqlDbType = System.Data.SqlDbType.Int,
+                    Direction = System.Data.ParameterDirection.Input,
+                    Value = IdEstado
+                }
+
+            };
+
+            //var consulta = context.SP_Ante_Pedido_Results.FromSqlRaw(sql, param).FirstOrDefault();
+            context.Database.ExecuteSqlRaw(sql, param);
+            //context.SaveChanges();
+
+            //return consulta.ToString();
+            return true;
+
+
+
+
         }
 
         public Pedido SingleOrDefault(Expression<Func<Pedido, bool>> predicate)

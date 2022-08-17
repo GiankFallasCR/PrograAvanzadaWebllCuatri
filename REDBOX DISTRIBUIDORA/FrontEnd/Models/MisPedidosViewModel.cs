@@ -1,11 +1,11 @@
 ﻿using BackEnd.Entities;
 using System.ComponentModel.DataAnnotations;
+using System.Xml.Linq;
 
 namespace FrontEnd.Models
 {
-    public class PedidoViewModel
+    public class MisPedidosViewModel
     {
-
         [Display(Name = "ID de Pedido")]
         public int IdPedido { get; set; }
 
@@ -23,17 +23,17 @@ namespace FrontEnd.Models
 
 
         [Display(Name = "Estado de Pedido")]
-        public int IdEstado { get; set; }
-        public IEnumerable<Estado> Estados { get; set; }
-        public Estado Estado { get; set; }
+        public string IdEstado { get; set; }
+        //public IEnumerable<Estado> Estados { get; set; }
+        //public Estado Estado { get; set; }
 
 
 
         [Display(Name = "Usuario")]
 
-        public int IdUsuario { get; set; }
-        public IEnumerable<Usuario> Usuarios { get; set; }
-        public Usuario Usuario { get; set; }
+        public string IdUsuario { get; set; }
+        //public IEnumerable<Usuario> Usuarios { get; set; }
+        //public Usuario Usuario { get; set; }
 
 
         [Display(Name = "Cantidad")]
