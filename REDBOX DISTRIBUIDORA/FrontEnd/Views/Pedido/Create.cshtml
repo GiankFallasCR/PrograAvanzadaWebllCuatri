@@ -4,10 +4,7 @@
     ViewData["Title"] = "Registrar Pedido";
 }
 
-@*<h1>Create</h1>
 
-<h4>Pedido</h4>
-<hr />*@
 <div class="row">
     <div class="col-12">
         <div class="card">
@@ -27,15 +24,6 @@
                             <span asp-validation-for="NumeroPedido" class="text-danger"></span>
                         </div>
                     </div>
-
-                    @*<div class ="row mb-3">
-                        <label asp-for="FechaPedido" class="col-sm-2 col-form-label"></label>
-                        <div class="col-sm-10">
-                        <input asp-for="FechaPedido" class="form-control" />
-                        <span asp-validation-for="FechaPedido" class="text-danger"></span>
-                        </div>
-                    </div>*@
-
                     <div class="row mb-3">
                         <label asp-for="IdProducto" class="col-sm-2 col-form-label"></label>
                         <div class="col-sm-10">
@@ -61,15 +49,8 @@
                     </div>
 
                     <div class="row mb-3">
-                        @*<label class="col-sm-2 col-form-label">Cantidad</label>*@
                         <label asp-for="CantidadProducto" class="col-sm-2 col-form-label"></label>
                         <div class="col-sm-10">
-                            @*<input id="demo0" class="form-control" type="number" value="Cantidad" name="demo0" data-bts-min="0" data-bts-max="100" 
-                            data-bts-init-val="" 
-                            data-bts-step="1" data-bts-decimal="0" data-bts-step-interval="100" data-bts-force-step-divisibility="round" 
-                            data-bts-step-interval-delay="500" data-bts-prefix="" data-bts-postfix="" data-bts-prefix-extra-class="" 
-                            data-bts-postfix-extra-class="" data-bts-booster="true" data-bts-boostat="10" data-bts-max-boosted-step="false" 
-                            data-bts-mousewheel="true" data-bts-button-down-class="btn btn-default" data-bts-button-up-class="btn btn-default">*@
                             <input asp-for="CantidadProducto" class="form-control" type="number" />
                             <span asp-validation-for="CantidadProducto" class="text-danger"></span>
                         </div>
