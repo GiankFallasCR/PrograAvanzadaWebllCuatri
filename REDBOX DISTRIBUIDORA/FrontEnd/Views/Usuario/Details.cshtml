@@ -4,53 +4,68 @@
     ViewData["Title"] = "Detalles del usuario";
 }
 
-<h1>Details</h1>
-
-<div>
-    
-    <hr />
-    <dl class="row">
-        
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NombreUsuario)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NombreUsuario)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Telefono)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Telefono)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Cedula)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Cedula)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Direccion)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Direccion)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NombreUsuario)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NombreUsuario)
-        </dd>
-       
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IDRol)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Rol.DescRol)
-        </dd>
-    </dl>
+<div class="email-leftbar card">
+    <button type="button" class="btn btn-light btn-block waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#composemodal">
+        <a asp-action="Index">Regresar a la lista de usuarios</a>
+    </button>
 </div>
-<div>
-    @Html.ActionLink("Editar usuario", "Edit", new {  id = Model.IdUsuario  }) |
-    <a asp-action="Index">Regresar a la lista de usuarios</a>
+<div class="email-rightbar mb-3">
+    <div class="card">
+        <div class="btn-toolbar p-3" role="toolbar">
+            <div class="btn-group me-2 mb-2 mb-sm-0">
+                @Html.ActionLink("", "Edit", new { id = Model.IdUsuario }, new { @class = "btn btn-danger w-xs ri-pencil-fill", @title = "Editar" })
+
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="d-flex mb-4">
+                <div class="flex-1">
+                    <h5 class="font-size-14 my-1">@Html.DisplayFor(model => model.Nombre)</h5>
+                    <small class="text-muted">Nombre del Usuario</small>
+                </div>
+            </div>
+            <h6>Detalles del Ususario</h6>
+            <hr />
+            <dl class="row">
+
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.NombreUsuario)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.NombreUsuario)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Telefono)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Telefono)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Cedula)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Cedula)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Direccion)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Direccion)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.NombreUsuario)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.NombreUsuario)
+                </dd>
+
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.IDRol)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Rol.DescRol)
+                </dd>
+            </dl>
+        </div>
+    </div>
 </div>
