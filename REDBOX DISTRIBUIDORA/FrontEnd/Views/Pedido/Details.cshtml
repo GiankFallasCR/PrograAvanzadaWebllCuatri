@@ -4,8 +4,7 @@
     ViewData["Title"] = "Detalles del Pedido";
 }
 <div class="email-leftbar card">
-    <button type="button" class="btn btn-danger btn-block waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#composemodal">
-        @Html.ActionLink("Editar", "Edit", new { id = Model.IdPedido }) |
+    <button type="button" class="btn btn-light btn-block waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#composemodal">         
         <a asp-action="Index2">Ir a mis pedidos</a>
     </button>
 </div>
@@ -13,9 +12,8 @@
     <div class="card">
         <div class="btn-toolbar p-3" role="toolbar">
             <div class="btn-group me-2 mb-2 mb-sm-0">
-                <button type="button" class="btn btn-primary waves-light waves-effect"><i class="fa fa-inbox"></i></button>
-                <button type="button" class="btn btn-primary waves-light waves-effect"><i class="fa fa-exclamation-circle"></i></button>
-                <button type="button" class="btn btn-primary waves-light waves-effect"><i class="far fa-trash-alt"></i></button>
+                @Html.ActionLink("", "Edit", new { id = Model.IdPedido }, new {@class="btn btn-danger w-xs ri-pencil-fill",  @title="Editar"})
+
             </div>
         </div>
         <div class="card-body">
