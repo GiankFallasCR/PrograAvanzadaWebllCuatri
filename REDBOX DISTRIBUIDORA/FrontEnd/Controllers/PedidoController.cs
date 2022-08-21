@@ -4,6 +4,7 @@ using BackEnd.Entities;
 using FrontEnd.Models;
 using BackEnd.DAL.Interfaces;
 using BackEnd.DAL.Implementations;
+using Microsoft.AspNetCore.Http;
 
 namespace FrontEnd.Controllers
 {
@@ -116,6 +117,13 @@ namespace FrontEnd.Controllers
             pedidos.Productos = productoDAL.GetAll();
             pedidos.Usuarios = usuarioDAL.GetAll();
 
+            int min = 1;
+            int max = 10000;
+
+            Random rmd = new Random();
+
+            ViewBag.NumPedidoVB = "ORDEN - "+ rmd.Next(min, max + 1).ToString();
+
             return View(pedidos);
 
         }
@@ -132,8 +140,10 @@ namespace FrontEnd.Controllers
         [HttpPost]
         public IActionResult Create(PedidoViewModel pedido)
         {
+
+            int usuario = Int32.Parse(HttpContext.Session.GetString("idU"));
             pedidoDAL = new DALPedidoIMP();
-            pedidoDAL.setPedidoSP(pedido.IdProducto,pedido.CantidadProducto,pedido.IdUsuario,pedido.NumeroPedido /*,pedido.FechaPedido,pedido.IdEstado*/);
+            pedidoDAL.setPedidoSP(pedido.IdProducto,pedido.CantidadProducto,usuario, pedido.NumeroPedido /*,pedido.FechaPedido,pedido.IdEstado*/);
 
             //return RedirectToAction("Details", new {pedido.IdPedido});
             return RedirectToAction("Index2");
