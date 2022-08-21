@@ -130,10 +130,10 @@ namespace BackEnd.DAL
             throw new NotImplementedException();
         }
 
-        public bool setPedidoSP(int IdProducto, int Cantidad, int IdUsuario, string NumeroPedido, /*DateTime FechaPedido,*/ int IdEstado)
+        public bool setPedidoSP(int IdProducto, int Cantidad, int IdUsuario, string NumeroPedido /*DateTime FechaPedido,*/ /*int IdEstado*/)
         {
             string resultado;
-            string sql = "[dbo].[SP_Ante_Pedido_Result] @ID_PRODUCT, @CANT_PRODUCTO, @ID_USUARIO, @NUM_PEDIDO, @ID_ESTADO";
+            string sql = "[dbo].[SP_Ante_Pedido_Result] @ID_PRODUCT, @CANT_PRODUCTO, @ID_USUARIO, @NUM_PEDIDO";
 
             //FechaPedido = DateTime.Today;
 
@@ -172,7 +172,7 @@ namespace BackEnd.DAL
                     Direction = System.Data.ParameterDirection.Input,
                     Size = 100,
                     Value = NumeroPedido
-                },
+                }
 
                 //new SqlParameter()
                 //{
@@ -181,13 +181,13 @@ namespace BackEnd.DAL
                 //    Value = FechaPedido
                 //},
 
-                new SqlParameter()
-                {
-                    ParameterName = "@ID_ESTADO",
-                    SqlDbType = System.Data.SqlDbType.Int,
-                    Direction = System.Data.ParameterDirection.Input,
-                    Value = IdEstado
-                }
+                //new SqlParameter()
+                //{
+                //    ParameterName = "@ID_ESTADO",
+                //    SqlDbType = System.Data.SqlDbType.Int,
+                //    Direction = System.Data.ParameterDirection.Input,
+                //    Value = IdEstado
+                //}
 
             };
 

@@ -133,9 +133,10 @@ namespace FrontEnd.Controllers
         public IActionResult Create(PedidoViewModel pedido)
         {
             pedidoDAL = new DALPedidoIMP();
-            pedidoDAL.setPedidoSP(pedido.IdProducto,pedido.CantidadProducto,pedido.IdUsuario,pedido.NumeroPedido,/*pedido.FechaPedido,*/pedido.IdEstado);
+            pedidoDAL.setPedidoSP(pedido.IdProducto,pedido.CantidadProducto,pedido.IdUsuario,pedido.NumeroPedido /*,pedido.FechaPedido,pedido.IdEstado*/);
 
-            return RedirectToAction("Index");
+            //return RedirectToAction("Details", new {pedido.IdPedido});
+            return RedirectToAction("Index2");
         }
 
         

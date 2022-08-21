@@ -10,13 +10,16 @@ namespace FrontEnd.Models
         public int IdPedido { get; set; }
 
         [Display(Name = "Número de Pedido")]
+        [Required(ErrorMessage = "El código del pedido es requerido.")]
         public string NumeroPedido { get; set; } = null!;
 
         [Display(Name = "Fecha de Pedido")]
+        [Required(ErrorMessage = "Es requerido que defina la fecha en la que se registró el pedido.")]
         public DateTime FechaPedido { get; set; }
 
 
         [Display(Name = "Producto")]
+        [Required(ErrorMessage = "El producto es requerido.")]
         public int IdProducto { get; set; }
         public IEnumerable<Producto> Productos { get; set; }
         public Producto Producto { get; set; }
@@ -30,14 +33,14 @@ namespace FrontEnd.Models
 
 
         [Display(Name = "Usuario")]
-
+        [Required(ErrorMessage = "El usuario que realiza el pedido es requerido.")]
         public int IdUsuario { get; set; }
         public IEnumerable<Usuario> Usuarios { get; set; }
         public Usuario Usuario { get; set; }
 
 
         [Display(Name = "Cantidad")]
-
+        [Required(ErrorMessage = "La cantidad de compra es requerida.")]
         public int CantidadProducto { get; set; }
     }
 }

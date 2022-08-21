@@ -3787,17 +3787,13 @@ C:\Users\giank\Desktop\Progra Web\ProyectoFinal\REDBOX DISTRIBUIDORA\FrontEnd\ob
 C:\Users\giank\Desktop\Progra Web\ProyectoFinal\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.genruntimeconfig.cache
 C:\Users\giank\Desktop\Progra Web\ProyectoFinal\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\ref\FrontEnd.dll
 C:\Users\giank\Desktop\Progra Web\ProyectoFinal\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.MvcApplicationPartsAssemblyInfo.cs
-D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.csproj.AssemblyReference.cache
-D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.GeneratedMSBuildEditorConfig.editorconfig
-D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.AssemblyInfoInputs.cache
-D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.AssemblyInfo.cs
-D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.csproj.CoreCompileInputs.cache
-D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.MvcApplicationPartsAssemblyInfo.cache
-D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.RazorAssemblyInfo.cache
-D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.RazorAssemblyInfo.cs
-D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.dll
-D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\refint\FrontEnd.dll
-D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.pdb
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\System.Composition.TypedParts.dll
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\appsettings.Development.json
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\appsettings.json
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\FrontEnd.staticwebassets.runtime.json
@@ -3829,7 +3825,6 @@ D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\Microso
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\Microsoft.DiaSymReader.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
-D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
@@ -3837,7 +3832,6 @@ D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\Microso
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
-D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\Microsoft.Identity.Client.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
@@ -3870,9 +3864,7 @@ D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\System.
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\System.Composition.Convention.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\System.Composition.Hosting.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\System.Composition.Runtime.dll
-D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\System.Composition.TypedParts.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
-D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\System.Drawing.Common.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\System.Runtime.Caching.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
@@ -3973,7 +3965,6 @@ D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\cs\Micr
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
-D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
@@ -4004,7 +3995,6 @@ D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\ja\Micr
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
-D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
@@ -4034,7 +4024,6 @@ D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\ru\Micr
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
@@ -4048,12 +4037,23 @@ D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\runtime
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\BackEnd.dll
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\bin\Debug\net6.0\BackEnd.pdb
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.csproj.AssemblyReference.cache
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.GeneratedMSBuildEditorConfig.editorconfig
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.AssemblyInfoInputs.cache
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.AssemblyInfo.cs
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.csproj.CoreCompileInputs.cache
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.MvcApplicationPartsAssemblyInfo.cs
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.MvcApplicationPartsAssemblyInfo.cache
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.RazorAssemblyInfo.cache
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.RazorAssemblyInfo.cs
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\staticwebassets.build.json
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\staticwebassets.development.json
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\scopedcss\bundle\FrontEnd.styles.css
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\scopedcss\projectbundle\FrontEnd.bundle.scp.css
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.csproj.CopyComplete
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.dll
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\refint\FrontEnd.dll
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.pdb
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.genruntimeconfig.cache
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\ref\FrontEnd.dll
-D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\FrontEnd\obj\Debug\net6.0\FrontEnd.MvcApplicationPartsAssemblyInfo.cs

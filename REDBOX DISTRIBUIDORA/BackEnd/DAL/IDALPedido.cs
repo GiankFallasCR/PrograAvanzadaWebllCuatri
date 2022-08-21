@@ -9,7 +9,7 @@ namespace BackEnd.DAL
 {
     public interface IDALPedido: IDALGenerico<Pedido>
     {
-        bool setPedidoSP(int IdProducto, int Cantidad, int IdUsuario, string NumeroPedido, /*DateTime FechaPedido*/ 
-            int IdEstado);
+        bool setPedidoSP(int IdProducto, int Cantidad, int IdUsuario, string NumeroPedido /*DateTime FechaPedido*/ 
+            /*int IdEstado*/);
     }
 }
