@@ -1,24 +1,54 @@
 ﻿@model FrontEnd.Models.UsuarioViewModel
 
 @{
-    ViewData["Title"] = "Eliminar";
+    ViewData["Title"] = "Eliminar Usuario";
 }
 
 
-<h3>Está seguro que quiere eliminar el usuario?</h3>
-<div>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-5">
-            @Html.DisplayNameFor(model => model.NombreUsuario)
-            @Html.DisplayFor(model => model.Nombre)
+@* Dando Formato*@
+    <div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
 
-        </dt>
-    </dl>
-    
-    <form asp-action="Delete">
-        @Html.HiddenFor(Model=>Model.IdUsuario)
-        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
-        <a asp-action="Index">Regresar a la lista de usuarios</a>
-    </form>
+                <h4 class="card-title">Eliminar un Usuario</h4>
+                <p class="card-title-desc">
+                    A continuación se muestran algunos detalles del usuario a eliminar:                     
+                </p>
+
+                <div class="table-responsive">
+                    <table class="table table-nowrap mb-0">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Aspecto</th>
+                                <th>Detalle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>@Html.DisplayNameFor(model => model.NombreUsuario)</td>
+                                <td>
+                                    <a href="#" id="inline-username">@Html.DisplayFor(model => model.NombreUsuario)</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>@Html.DisplayNameFor(model => model.Nombre)</td>
+                                <td>
+                                    <a href="#" id="inline-username">@Html.DisplayFor(model => model.Nombre)</a>
+                                </td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+                </div>
+
+                <form asp-action="Delete">
+                    @Html.HiddenFor(Model=>Model.IdUsuario)
+                    <input type="submit" value="Eliminar Usuario" class="btn btn-danger" />
+                    <a asp-action="Index">Volver a la Lista</a>
+                </form>
+
+            </div>
+        </div>
+    </div> <!-- end col -->
 </div>

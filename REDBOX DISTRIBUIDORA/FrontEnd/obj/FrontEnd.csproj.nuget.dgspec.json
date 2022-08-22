@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\giank\\Desktop\\Progra Web\\ProyectoFinal\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj": {}
+    "C:\\Users\\juank\\Documents\\ProyectoPorgraAvanzadaWeb\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\giank\\Desktop\\Progra Web\\ProyectoFinal\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {
+    "C:\\Users\\juank\\Documents\\ProyectoPorgraAvanzadaWeb\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\giank\\Desktop\\Progra Web\\ProyectoFinal\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
+        "projectUniqueName": "C:\\Users\\juank\\Documents\\ProyectoPorgraAvanzadaWeb\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
         "projectName": "BackEnd",
-        "projectPath": "C:\\Users\\giank\\Desktop\\Progra Web\\ProyectoFinal\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
-        "packagesPath": "C:\\Users\\giank\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\giank\\Desktop\\Progra Web\\ProyectoFinal\\REDBOX DISTRIBUIDORA\\BackEnd\\obj\\",
+        "projectPath": "C:\\Users\\juank\\Documents\\ProyectoPorgraAvanzadaWeb\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj",
+        "packagesPath": "C:\\Users\\juank\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\juank\\Documents\\ProyectoPorgraAvanzadaWeb\\REDBOX DISTRIBUIDORA\\BackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\giank\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\juank\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,21 +78,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\giank\\Desktop\\Progra Web\\ProyectoFinal\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj": {
+    "C:\\Users\\juank\\Documents\\ProyectoPorgraAvanzadaWeb\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\giank\\Desktop\\Progra Web\\ProyectoFinal\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj",
+        "projectUniqueName": "C:\\Users\\juank\\Documents\\ProyectoPorgraAvanzadaWeb\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj",
         "projectName": "FrontEnd",
-        "projectPath": "C:\\Users\\giank\\Desktop\\Progra Web\\ProyectoFinal\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj",
-        "packagesPath": "C:\\Users\\giank\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\giank\\Desktop\\Progra Web\\ProyectoFinal\\REDBOX DISTRIBUIDORA\\FrontEnd\\obj\\",
+        "projectPath": "C:\\Users\\juank\\Documents\\ProyectoPorgraAvanzadaWeb\\REDBOX DISTRIBUIDORA\\FrontEnd\\FrontEnd.csproj",
+        "packagesPath": "C:\\Users\\juank\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\juank\\Documents\\ProyectoPorgraAvanzadaWeb\\REDBOX DISTRIBUIDORA\\FrontEnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\giank\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\juank\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -106,8 +106,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\giank\\Desktop\\Progra Web\\ProyectoFinal\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {
-                "projectPath": "C:\\Users\\giank\\Desktop\\Progra Web\\ProyectoFinal\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj"
+              "C:\\Users\\juank\\Documents\\ProyectoPorgraAvanzadaWeb\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj": {
+                "projectPath": "C:\\Users\\juank\\Documents\\ProyectoPorgraAvanzadaWeb\\REDBOX DISTRIBUIDORA\\BackEnd\\BackEnd.csproj"
               }
             }
           }
@@ -159,7 +159,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }
