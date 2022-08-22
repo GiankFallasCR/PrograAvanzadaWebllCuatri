@@ -6,52 +6,60 @@
 
 <hr />
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            @Html.HiddenFor(Model => Model.IdUsuario)
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Editar un Usuario</h4>
+                <p class="card-title-desc">
+                   Modifique el usuario seleccionado.
+                </p>
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    @Html.HiddenFor(Model=>Model.IdUsuario)
+                    <div class="row mb-3">
+                        <label asp-for="Nombre" class="col-sm-2 col-form-label"></label>
+                        <input asp-for="Nombre" class="form-control" readonly />
+                        <span asp-validation-for="Nombre" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <label asp-for="Telefono" class="col-sm-2 col-form-label"></label>
+                        <input asp-for="Telefono" class="form-control" />
+                        <span asp-validation-for="Telefono" class="text-danger"></span>
+                    </div>   
+                    <div class="row mb-3">
+                        <label asp-for="Cedula" class="col-sm-2 col-form-label"></label>
+                        <input asp-for="Cedula" class="form-control" />
+                        <span asp-validation-for="Cedula" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <label asp-for="Direccion" class="col-sm-2 col-form-label"></label>
+                        <input asp-for="Direccion" class="form-control" />
+                        <span asp-validation-for="Direccion" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <label asp-for="NombreUsuario" class="col-sm-2 col-form-label"></label>
+                        <input asp-for="NombreUsuario" class="form-control" />
+                        <span asp-validation-for="NombreUsuario" class="text-danger"></span>
+                    </div> 
+                    <div class="row mb-3">
+                        <label asp-for="ContraseniaUsuario" class="control-label"></label>
+                        <input type="password" asp-for="ContraseniaUsuario" class="form-control" />
+                        <span asp-validation-for="ContraseniaUsuario" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <label asp-for="IDRol" class="col-sm-2 col-form-label"></label>
+                        <div class="col-sm-10">
+                            @Html.DropDownListFor(model => model.IDRol, new SelectList(Model.Roles,"IdRol", "DescRol"),"--Seleccione--",new { @disabled = "disabled",@class = "form-select" })                            
+                            <span asp-validation-for="IDRol" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Guardar Cambios" class="btn btn-danger" />
+                    </div>
+                </form>
+            </div>
+        </div>
 
-            <div class="form-group">
-                <label asp-for="Nombre" class="control-label"></label>
-                <input asp-for="Nombre" class="form-control" readonly />
-                <span asp-validation-for="Nombre" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Telefono" class="control-label"></label>
-                <input asp-for="Telefono" class="form-control" />
-                <span asp-validation-for="Telefono" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cedula" class="control-label"></label>
-                <input asp-for="Cedula" class="form-control" readonly />
-                <span asp-validation-for="Cedula" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Direccion" class="control-label"></label>
-                <input asp-for="Direccion" class="form-control" />
-                <span asp-validation-for="Direccion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NombreUsuario" class="control-label"></label>
-                <input asp-for="NombreUsuario" class="form-control" readonly />
-                <span asp-validation-for="NombreUsuario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ContraseniaUsuario" class="control-label"></label>
-                <input type="password" asp-for="ContraseniaUsuario" class="form-control" />
-                <span asp-validation-for="ContraseniaUsuario" class="text-danger"></span>
-            </div>
-            <br />
-            <div class="form-group">
-                <label asp-for="IDRol" class="control-label"></label>
-                @Html.DropDownListFor(model => model.IDRol, new SelectList(Model.Roles, "IdRol", "DescRol"), "--Seleccione--")
-                <span asp-validation-for="IDRol" class="text-danger"></span>
-            </div>
-            <br />
-            <div class="form-group">
-                <input type="submit" value="Guardar" class="btn btn-primary" />
-            </div>
-        </form>
     </div>
 </div>
 
@@ -62,3 +70,63 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+
+@*
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Editar un Pedido</h4>
+                <p class="card-title-desc">
+                   Modifique el estado del pedido.
+                </p>
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    @Html.HiddenFor(Model=>Model.IdUsuario)
+                    <div class="row mb-3">
+                        <label asp-for="Nombre" class="col-sm-2 col-form-label"></label>
+                        <input asp-for="Nombre" class="form-control" readonly />
+                        <span asp-validation-for="Nombre" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <label asp-for="Telefono" class="col-sm-2 col-form-label"></label>
+                        <input asp-for="Telefono" class="form-control" />
+                        <span asp-validation-for="Telefono" class="text-danger"></span>
+                    </div>   
+                    <div class="row mb-3">
+                        <label asp-for="Cedula" class="col-sm-2 col-form-label"></label>
+                        <input asp-for="Cedula" class="form-control" />
+                        <span asp-validation-for="Cedula" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <label asp-for="Direccion" class="col-sm-2 col-form-label"></label>
+                        <input asp-for="Direccion" class="form-control" />
+                        <span asp-validation-for="Direccion" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <label asp-for="NombreUsuario" class="col-sm-2 col-form-label"></label>
+                        <input asp-for="NombreUsuario" class="form-control" />
+                        <span asp-validation-for="NombreUsuario" class="text-danger"></span>
+                    </div> 
+                    <div class="row mb-3">
+                        <label asp-for="ContraseniaUsuario" class="control-label"></label>
+                        <input type="password" asp-for="ContraseniaUsuario" class="form-control" />
+                        <span asp-validation-for="ContraseniaUsuario" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <label asp-for="IDRol" class="col-sm-2 col-form-label"></label>
+                        <div class="col-sm-10">
+                            @Html.DropDownListFor(model => model.IDRol, new SelectList(Model.Roles,"IdRol", "DescRol"),"--Seleccione--",new { @disabled = "disabled",@class = "form-select" })                            
+                            <span asp-validation-for="IDRol" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Guardar Cambios" class="btn btn-danger" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>*@
