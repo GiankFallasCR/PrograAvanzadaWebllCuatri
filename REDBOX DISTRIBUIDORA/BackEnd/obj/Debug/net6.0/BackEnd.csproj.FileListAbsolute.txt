@@ -208,20 +208,6 @@ D:/UFIDE/REDBOX_PROYECTO_AVNZ/REDBOX DISTRIBUIDORA/BackEnd/obj/Debug/net6.0/ref/
 /Users/joseredondo/Documents/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/obj/Debug/net6.0/BackEnd.pdb
 /Users/joseredondo/Documents/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/obj/Debug/net6.0/BackEnd.genruntimeconfig.cache
 /Users/joseredondo/Documents/PrograAvanzadaWebllCuatri/REDBOX DISTRIBUIDORA/BackEnd/obj/Debug/net6.0/ref/BackEnd.dll
-D:/UFIDE/REDBOX_PROY_ANVZ/REDBOX DISTRIBUIDORA/BackEnd/bin/Debug/net6.0/BackEnd.deps.json
-D:/UFIDE/REDBOX_PROY_ANVZ/REDBOX DISTRIBUIDORA/BackEnd/bin/Debug/net6.0/BackEnd.runtimeconfig.json
-D:/UFIDE/REDBOX_PROY_ANVZ/REDBOX DISTRIBUIDORA/BackEnd/bin/Debug/net6.0/BackEnd.dll
-D:/UFIDE/REDBOX_PROY_ANVZ/REDBOX DISTRIBUIDORA/BackEnd/bin/Debug/net6.0/BackEnd.pdb
-D:/UFIDE/REDBOX_PROY_ANVZ/REDBOX DISTRIBUIDORA/BackEnd/obj/Debug/net6.0/BackEnd.csproj.AssemblyReference.cache
-D:/UFIDE/REDBOX_PROY_ANVZ/REDBOX DISTRIBUIDORA/BackEnd/obj/Debug/net6.0/BackEnd.GeneratedMSBuildEditorConfig.editorconfig
-D:/UFIDE/REDBOX_PROY_ANVZ/REDBOX DISTRIBUIDORA/BackEnd/obj/Debug/net6.0/BackEnd.AssemblyInfoInputs.cache
-D:/UFIDE/REDBOX_PROY_ANVZ/REDBOX DISTRIBUIDORA/BackEnd/obj/Debug/net6.0/BackEnd.AssemblyInfo.cs
-D:/UFIDE/REDBOX_PROY_ANVZ/REDBOX DISTRIBUIDORA/BackEnd/obj/Debug/net6.0/BackEnd.csproj.CoreCompileInputs.cache
-D:/UFIDE/REDBOX_PROY_ANVZ/REDBOX DISTRIBUIDORA/BackEnd/obj/Debug/net6.0/BackEnd.dll
-D:/UFIDE/REDBOX_PROY_ANVZ/REDBOX DISTRIBUIDORA/BackEnd/obj/Debug/net6.0/refint/BackEnd.dll
-D:/UFIDE/REDBOX_PROY_ANVZ/REDBOX DISTRIBUIDORA/BackEnd/obj/Debug/net6.0/BackEnd.pdb
-D:/UFIDE/REDBOX_PROY_ANVZ/REDBOX DISTRIBUIDORA/BackEnd/obj/Debug/net6.0/BackEnd.genruntimeconfig.cache
-D:/UFIDE/REDBOX_PROY_ANVZ/REDBOX DISTRIBUIDORA/BackEnd/obj/Debug/net6.0/ref/BackEnd.dll
 C:\Users\giank\Desktop\Progra Web\ProyectoFinal\REDBOX DISTRIBUIDORA\BackEnd\bin\Debug\net6.0\BackEnd.deps.json
 C:\Users\giank\Desktop\Progra Web\ProyectoFinal\REDBOX DISTRIBUIDORA\BackEnd\bin\Debug\net6.0\BackEnd.runtimeconfig.json
 C:\Users\giank\Desktop\Progra Web\ProyectoFinal\REDBOX DISTRIBUIDORA\BackEnd\bin\Debug\net6.0\BackEnd.dll
@@ -250,3 +236,17 @@ C:\Users\juank\Documents\ProyectoPorgraAvanzadaWeb\REDBOX DISTRIBUIDORA\BackEnd\
 C:\Users\juank\Documents\ProyectoPorgraAvanzadaWeb\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.pdb
 C:\Users\juank\Documents\ProyectoPorgraAvanzadaWeb\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.genruntimeconfig.cache
 C:\Users\juank\Documents\ProyectoPorgraAvanzadaWeb\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\ref\BackEnd.dll
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\BackEnd\bin\Debug\net6.0\BackEnd.deps.json
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\BackEnd\bin\Debug\net6.0\BackEnd.runtimeconfig.json
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\BackEnd\bin\Debug\net6.0\BackEnd.dll
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\BackEnd\bin\Debug\net6.0\BackEnd.pdb
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.csproj.AssemblyReference.cache
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.GeneratedMSBuildEditorConfig.editorconfig
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.AssemblyInfoInputs.cache
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.AssemblyInfo.cs
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.csproj.CoreCompileInputs.cache
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.dll
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\refint\BackEnd.dll
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.pdb
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.genruntimeconfig.cache
+D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\ref\BackEnd.dll

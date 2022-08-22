@@ -222,7 +222,7 @@ namespace FrontEnd.Controllers
                     HttpContext.Session.SetString("idU", idU);
 
                     //return Json(resultado, JsonRequestBehavior.AllowGet);
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Producto");
                 }
                 else
                 {
