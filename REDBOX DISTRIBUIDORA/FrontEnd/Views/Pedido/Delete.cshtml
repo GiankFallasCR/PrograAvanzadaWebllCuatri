@@ -1,35 +1,72 @@
 ﻿@model FrontEnd.Models.PedidoViewModel
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Eliminar Pedido";
 }
 
-<h1>Delete</h1>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>PedidoViewModel</h4>
-    <hr />
-    <dl class="row">
-        
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NumeroPedido)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NumeroPedido)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FechaPedido)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FechaPedido)
-        </dd>
-        
-    </dl>
-    
-    <form asp-action="Delete">
-        @Html.HiddenFor(Model=>Model.IdPedido)
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Volver a la Lista</a>
-    </form>
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="card-title">Eliminar un Pedido</h4>
+                <p class="card-title-desc">
+                    A continuación se muestran algunos detalles del pedido a eliminar:                     
+                </p>
+
+                <div class="table-responsive">
+                    <table class="table table-nowrap mb-0">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Aspecto</th>
+                                <th>Detalle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>@Html.DisplayNameFor(model => model.NumeroPedido)</td>
+                                <td>
+                                    <a href="#" id="inline-username">@Html.DisplayFor(model => model.NumeroPedido)</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>@Html.DisplayNameFor(model => model.FechaPedido)</td>
+                                <td>
+                                    <a href="#" id="inline-firstname">@Html.DisplayFor(model => model.FechaPedido)</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <form asp-action="Delete">
+                    @Html.HiddenFor(Model=>Model.IdPedido)
+                    <input type="submit" value="Eliminar Pedido" class="btn btn-danger" />
+                    @*<a asp-action="Index">Volver a la Lista</a>*@
+                </form>
+
+            </div>
+        </div>
+    </div> <!-- end col -->
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
