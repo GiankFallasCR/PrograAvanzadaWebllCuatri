@@ -232,7 +232,8 @@ namespace FrontEnd.Controllers
             catch (Exception)
             {
 
-                throw;
+                //throw;
+                return View("Error");
             }
         }
 
