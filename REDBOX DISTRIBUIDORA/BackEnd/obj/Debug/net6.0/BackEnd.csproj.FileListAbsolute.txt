@@ -250,3 +250,17 @@ D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\refint\B
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.pdb
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.genruntimeconfig.cache
 D:\UFIDE\REDBOX_PROY_ANVZ\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\ref\BackEnd.dll
+C:\PrograAvanzadaWebllCuatri\REDBOX DISTRIBUIDORA\BackEnd\bin\Debug\net6.0\BackEnd.deps.json
+C:\PrograAvanzadaWebllCuatri\REDBOX DISTRIBUIDORA\BackEnd\bin\Debug\net6.0\BackEnd.runtimeconfig.json
+C:\PrograAvanzadaWebllCuatri\REDBOX DISTRIBUIDORA\BackEnd\bin\Debug\net6.0\BackEnd.dll
+C:\PrograAvanzadaWebllCuatri\REDBOX DISTRIBUIDORA\BackEnd\bin\Debug\net6.0\BackEnd.pdb
+C:\PrograAvanzadaWebllCuatri\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.csproj.AssemblyReference.cache
+C:\PrograAvanzadaWebllCuatri\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.GeneratedMSBuildEditorConfig.editorconfig
+C:\PrograAvanzadaWebllCuatri\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.AssemblyInfoInputs.cache
+C:\PrograAvanzadaWebllCuatri\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.AssemblyInfo.cs
+C:\PrograAvanzadaWebllCuatri\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.csproj.CoreCompileInputs.cache
+C:\PrograAvanzadaWebllCuatri\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.dll
+C:\PrograAvanzadaWebllCuatri\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\refint\BackEnd.dll
+C:\PrograAvanzadaWebllCuatri\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.pdb
+C:\PrograAvanzadaWebllCuatri\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\BackEnd.genruntimeconfig.cache
+C:\PrograAvanzadaWebllCuatri\REDBOX DISTRIBUIDORA\BackEnd\obj\Debug\net6.0\ref\BackEnd.dll
